@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: AJ Weeks
+# email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  The personal website of AJ Weeks, a student game developer studying Digital Arts and Entertainment at Howest - Kortrijk, Belgium
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://ajweeks.com" # the base hostname & protocol for your site
+twitter_username: liqwidice
+github_username:  ajweeks
+email: contact@ajweeks.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty

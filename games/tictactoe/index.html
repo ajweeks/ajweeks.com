@@ -1,0 +1,204 @@
+---
+title: Ultimate Tic Tac Toe
+author: AJ Weeks
+description: An HTML5 implementation of Ulimate Tic Tac Toe made by AJ Weeks
+permalink: /tictactoe/
+navlink: false
+---
+
+<meta name="keywords" content="tic tac toe, ultimate tic tac toe, js, javascript, game, html5, web game, puzzle game, liqwidice, liqwidice games">
+<script type="text/javascript" src="../games/tictactoe/main.js"></script>
+<style type="text/css">
+    @font-face {
+        font-family: SourceSansPro-Bold;
+        src: url('../games/tictactoe/res/SourceSansPro-Bold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: SourceSansPro-Light;
+        src: url('../games/tictactoe/res/SourceSansPro-Light.otf') format('opentype');
+    }
+    @font-face {
+        font-family: SourceSansPro-ExtraLight;
+        src: url('../games/tictactoe/res/SourceSansPro-ExtraLight.otf') format('opentype');
+    }
+    @font-face {
+        font-family: SourceSansPro-Regular;
+        src: url('../games/tictactoe/res/SourceSansPro-Regular.otf') format('opentype');
+    }
+</style>
+<style type="text/css">
+    html {
+        background-color: #201020;
+        color: #F8F8F8;
+        font-family: SourceSansPro-Regular;
+        font-size: 30px;
+        min-width: 970px;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #gameArea {
+        width: 100%;
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #gameCanvas {
+        border-radius: 8px;
+        margin-right: 200px;
+    }
+
+    #buttons {
+        padding: 10px 20px;
+    }
+
+    .button {
+        background-color: #101;
+        box-shadow: 0 0 5px rgba(150, 150, 150, 0.5);
+        transition: box-shadow 0.2s ease-out, color 0.2s;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 4px 10px;
+        cursor: pointer;
+        color: #EFE;
+    }
+
+    .button:hover {
+        box-shadow: 0 0 5px rgba(150, 150, 150, 0.5), 0 0 5px rgba(150, 150 , 150, 1.0) inset;
+        color: #CDC;
+    }
+
+    /* FIXME: buttons after first don't render correctly while being hovered on */
+    .button:active {
+        box-shadow: #313 inset;
+    }
+
+    .onoffswitch {
+        position: relative; width: 89px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #202; border-radius: 5px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "AI";
+        padding-left: 10px;
+        background-color: #313; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "Player";
+        padding-right: 10px;
+        background-color: #F8F8F8; color: #444;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 26px; margin: 0px;
+        background: #FFFFFF;
+        border: 2px solid #202; border-radius: 5px;
+        position: absolute; top: 0; bottom: 0; right: 59px;
+        -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+    }
+
+    #darken {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 3s;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+    }
+
+    #popup {
+        text-align: center;
+        position: absolute;
+        background-color: #111;
+        padding: 10px;
+        border-color: #CD3;
+        border-width: 4px;
+        border-style: ridge;
+        top: 20%;
+        left: 50%;
+        margin-left: -150px;
+        z-index: 6;
+    }
+    #popup h2 {
+        margin: 10px;
+    }
+    #popup a {
+        font-size: 18px;
+        position: absolute;
+        right: 6px;
+        top: 0;
+        color: white;
+        cursor: pointer;
+    }
+    #popup a:hover {
+        text-shadow: 0 0 5px white;
+    }
+    #popup div {
+        display: inline-block;
+    }
+
+    footer {
+        position: absolute;
+        background-color: #282028;
+        box-sizing: border-box;
+        font-size: 16px;
+        bottom: 0;
+        left: 0;
+        padding: 3px 30px;
+        width: 100%;
+    }
+    footer span {
+        float: right;
+    }
+    footer a {
+        color: white;
+    }
+</style>
+<!-- <script>window.scrollback = {"room":"tictactoechat","form":"canvas","minimize":false};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script> -->
+
+<h2>Ultimate Tic Tac Toe</h2>
+<div id="gameArea">
+    <div id="buttons">
+        <div class="button" onmousedown="createPopup('newgame')" style="width: 136px">New Game</div>
+        <div class="button" onmousedown="createPopup('rules')" style="width: 136px">Rules</div>
+    </div>
+    <canvas id="gameCanvas" width="544" height="544" onmousedown="boardClick(event)" onmousemove="boardHover(event)" oncontextmenu="return false"></canvas>
+</div>
+
+<div id="darken" style="display: none"></div>
+<div id="popup" style="display: none"></div>
+<footer><span>More games at <a href="http://ajweeks.com/games">ajweeks.com/games</a></span></footer>

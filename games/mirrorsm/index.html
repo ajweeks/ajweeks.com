@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- Copyright AJ Weeks 2015 -->
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../games/mirrors/res/logo.ico">
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <meta name="keywords" content="mirrors, js, html, css, mirrors-js, game, webgame, mobile">
+    <meta name="description" content="A 2D tile-based laser-filled game created by AJ Weeks">
+    <meta name="author" content="AJ Weeks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="mobile-web-app-capable" content="yes">
+    <style type="text/css">
+        @font-face {
+            font-family: YanoneKaffeesatzLight;
+            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Light.ttf') format('truetype');
+        }
+    </style>
+    <style type="text/css">
+        html {
+            /* PREVENT TEXT HIGHLIGHTING SITE-WIDE */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            font-family: 'YanoneKaffeesatzLight', sans-serif;
+        }
+        body {
+            background: #191919;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        input {
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+        h2 {
+            font-weight: normal;
+            font-size: 36px;
+            color: white;
+            text-align: center;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        #mainmenubtns {
+            margin: 7% auto;
+        }
+
+        #mainmenubtns div {
+          width: 180px;
+          height: 80px;
+          font-size: 28px;
+          line-height: 80px;
+        }
+
+        [class~=button] {
+            color: white;
+            margin: 6px auto;
+            background-color: #3b154b;
+            text-align: center;
+            font-size: 26px;
+            width: 110px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 4px;
+        }
+
+        .lvlselect {
+            background-color: #3e3e3e;
+            box-shadow: none;
+        }
+
+        .lvlselect.enabled {
+            box-shadow: inherit;
+            background-color: #3B154B;
+        }
+
+        .lvlselect.locked {
+            box-shadow: none;
+            background-color: #1c0a23;
+        }
+
+        #levelselectstate {
+            transition: margin 0.3s;
+        }
+
+        /* TODO implement boss levels? LATER */
+
+        /*.bosslvl.enabled {
+            color: #DDD;
+            background-color: #1E0A26;
+        }
+
+        .bosslvl.enabled:active {
+            box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 12px inset !important;
+        }*/
+
+        .button:active:not(.lvlselect), .lvlselect.enabled:active {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 12px inset;
+            text-shadow: black 1px 1px 10px;
+        }
+
+        #darken {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 1499999;
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #darken.hidden {
+          background-color: rgba(0, 0, 0, 0.0);
+          z-index: -200;
+        }
+
+        #popup {
+          position: absolute;
+          top: 125px;
+          left: 50%;
+          margin-left: -135px;
+          padding: 6px 10px;
+          border: 4px ridge #CC9900;
+          border-color: #C49F05 #A58500 #AA8900 #C9A201;
+          border-radius: 3px;
+          z-index: 1500000;
+          background-color: black;
+          color: white;
+          text-align: center;
+          transition: all 0.3s;
+        }
+
+        #popup.hidden {
+          left: -1920px;
+        }
+
+        #popup h3 {
+          margin: 10px 0;
+        }
+
+        #popup p {
+          font-size: 20px;
+        }
+
+        #popup textarea {
+          resize: none;
+        }
+
+        #popupClose {
+          float: right;
+          margin: -5px -2px;
+          font-size: 18px;
+          color: lightgray;
+          text-decoration: none;
+        }
+
+        #popupClose:active {
+            color: white;
+            text-shadow: 1px 1px 10px white;
+        }
+
+        .popupButton {
+            display: inline-block;
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            margin: 4px;
+            font-size: 24px;
+        }
+
+        #backarrow, #forwardarrow {
+            color: aliceblue;
+            /*background-color: rgba(25, 25, 25, 0.8);*/
+            position: fixed;
+            top: 50%;
+            width: 60px;
+            height: 100px;
+            line-height: 100px;
+            margin-top: -50px;
+            z-index: 5001;
+            text-align: center;
+        }
+
+        #backarrow {
+            left: 0;
+        }
+
+        #forwardarrow {
+            right: 0;
+        }
+
+        #forwardarrow p, #backarrow p {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .page {
+            position: relative;
+            display: inline-block;
+            margin: 0 60px;
+        }
+
+        /* represents a column of buttons in the lvl selection area */
+        .col {
+            position: relative;
+            display: inline-block;
+            margin: 0 60px;
+        }
+
+        #gameboard {
+            background: transparent;
+            position: absolute;
+        }
+        #gamecanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .row { height: 32px; }
+        .tile {
+            position: absolute;
+            height: 32px;
+            width: 32px;
+        }
+
+        /*  TO MAKE SOMETHING "STICK" TO THE BOTTOM OF THE WINDOW, SET: { position: fixed, left: 0px, bottom: 0px; }  */
+
+        #optionsinfo, #aboutinfo {
+            position: absolute;
+            margin-top: 20px;
+            width: 320px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .optionbox {
+            background-color: #111;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .button.disabled {
+            background-color: #777;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a {
+            color: #810101;
+        }
+
+        a:active {
+            color: #730202;
+        }
+
+        #versionNumber {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            opacity: 0.5;
+            margin: 8px;
+            font-size: 20px;
+            z-index: 100000;
+            color: white;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="game">
+    <h2>Mirrors</h2>
+
+    <div id="mainmenubtns">
+        <div class="button" id="playButton" ontouchend="Game.sm.enterState('levelselect'); return false;">Play</div>
+        <div class="button" id="optionsButton" ontouchend="Game.sm.enterState('option'); return false;">Options</div>
+        <div class="button" id="aboutButton" ontouchend="Game.sm.enterState('about'); return false;">About</div>
+    </div>
+
+    <div id="aboutstate" style="display: none">
+        <div class="button" ontouchstart="Game.sm.enterPreviousState(); return false;" style="margin-left: 40px;">Back</div>
+        <div id="aboutinfo">
+            <p>Mirrors was created by AJ Weeks in early 2015 using TypeScript.</p>
+            <p>You see his other games at <a href="https://ajweeks.github.io/games/">ajweeks.github.io/games</a></p>
+            <p>If you have any comments or criticisms send him a mesage on twitter <a href="https://twitter.com/liqwidice" target="_blank">@liqwidice</a></p>
+            <p>Fork the project on Github at <a href="https://github.com/ajweeks/Mirrors-Mobile" target="_blank">github.com/ajweeks/mirrors-ts</a></p>
+        </div>
+    </div>
+
+    <div id="optionstate" style="display: none">
+        <div class="button" ontouchstart="Game.sm.enterPreviousState(); return false;" style="margin-left: 40px;">Back</div>
+        <div id="optionsinfo">
+            <div class="optionbox" style="width: 250px; margin: 0 auto;">
+                <h2 style="margin: 0">Sounds</h2>
+                <div id="soundOff" class="button" style="width: 45px; margin-top: 0px; display: inline-block;" ontouchstart="if (get('soundOff').className==='button') { Sound.toggleMute(); Sound.play(Sound.select); get('soundOn').className='button'; get('soundOff').className='button disabled'; } return false;">Off</div>
+                <div id="soundOn" class="button disabled" style="width: 45px; margin-top: 10px; display: inline-block;" ontouchstart="if (get('soundOn').className==='button') { Sound.toggleMute(); Sound.play(Sound.select); get('soundOff').className='button'; get('soundOn').className='button disabled'; } return false;">On</div>
+            </div>
+            <div class="button" style="width: 180px; margin-top: 30px;" ontouchstart="Sound.play(Sound.select); Game.sm.currentState().setResetAllLevelsPopup(); return false;">Reset All Levels</div>
+        </div>
+    </div>
+
+    <div id="levelselectstate" style="display: none;"></div>
+
+    <div id="gameboard" style="display: none">
+
+        <audio id="blipSound"><source src="../games/mirrors/res/sounds/blip.wav"></source></audio>
+        <audio id="selectSound"><source src="../games/mirrors/res/sounds/select.wav"></source></audio>
+        <audio id="select3Sound"><source src="../games/mirrors/res/sounds/select3.wav"></source></audio>
+        <audio id="winSound"><source src="../games/mirrors/res/sounds/win.wav"></source></audio>
+        <audio id="wizzleSound"><source src="../games/mirrors/res/sounds/wizzle.wav"></source></audio>
+
+        <div class="button" ontouchstart="Game.sm.enterPreviousState(); return false;" style="position: fixed; bottom: 32px; left: 12%;">Back</div>
+        <div class="button" ontouchstart="Sound.play(Sound.select); Game.sm.currentState().setResetLevelPopup(); return false;" style="position: fixed; bottom: 32px; right: 12%;">Reset</div>
+        <h3 id="levelNumHeading" style="position: absolute; top: -53px; left: 6px; font-size: 24px; color: gray;"></h3>
+        <canvas id="gamecanvas" ontouchstart="boardClick(event, true); return false;" ></canvas>
+    </div>
+
+    <div id="darken" class="hidden"></div>
+
+    <div id="popupHolder">
+      <div id="popup" class="hidden"></div>
+    </div>
+
+    <div id="versionNumber"></div>
+</div>
+</body>
+</html>

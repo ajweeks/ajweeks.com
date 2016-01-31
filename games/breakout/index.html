@@ -1,0 +1,127 @@
+---
+permalink: /breakout/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breakout</title>
+
+    <link rel="shortcut icon" href="../games/breakout/res/logo.ico">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    html {
+        background-color: #123;
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        color: #FFF;
+
+        /* PREVENT TEXT HIGHLIGHTING SITE-WIDE */
+         -webkit-touch-callout: none;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    canvas {
+        vertical-align: top; /* Removes gap between canvases */
+    }
+    a {
+        color: #BBB;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #FFF;
+    }
+    h1 {
+        cursor: default;
+        font-size: 48px;
+        margin-bottom: 28px;
+    }
+    main {
+        background-color: #345;
+        box-shadow: 0 0 35px #002;
+        margin: 0px auto 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 900px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: relative; /* Allows box-shadow to appear over footer */
+        z-index: 5;
+    }
+    main p {
+        font-size: 24px;
+    }
+    .button {
+        margin: 80px auto 15px auto;
+        width: 90px;
+        color: #123;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 28px;
+        background-color: #FFF;
+    }
+    .button:hover {
+        background-color: #DDD;
+        color: #000;
+    }
+    footer {
+        left: 50%;
+        margin-bottom: 80px;
+        margin-left: -430px;
+        width: 860px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #234;
+        box-shadow: 0 0 35px #114;
+        position: absolute;
+        line-height: 30px;
+        transition: margin 0.5s;
+    }
+    footer p {
+        font-size: 24px;
+    }
+    footer span {
+        bottom: 0;
+    }
+    footer.short {
+        margin-top: -130px;
+    }
+    </style>
+    <script src="../games/breakout/main.js"></script>
+</head>
+<body>
+    <audio id="blipSound"><source src="../games/breakout/res/sounds/blip.wav"></source></audio>
+    <audio id="bloopSound"><source src="../games/breakout/res/sounds/bloop.wav"></source></audio>
+    <audio id="dieSound"><source src="../games/breakout/res/sounds/die.wav"></source></audio>
+    <audio id="boomSound"><source src="../games/breakout/res/sounds/boom.wav"></source></audio>
+    <audio id="lifeSound"><source src="../games/breakout/res/sounds/life.wav"></source></audio>
+
+    <main>
+        <h1>Breakout</h1>
+        <canvas id="infoCanvas" width="720" height="80" style="border-top-left-radius: 15px; border-top-right-radius: 15px"></canvas>
+        <canvas id="gameCanvas" width="720" height="480" onmousemove="Mouse.update(event)" onmousedown="Mouse.down(event)" onmouseup="Mouse.up(event)">Sorry, your browser does not support canvases :(</canvas>
+        <div style="margin-top: 15px;">
+            <input id="volumeSlider" type="range" value="30" style="display: block; margin-left: 92px;" onchange="Sound.changeVolume()"/>
+            <span style="font-size: 22px; float: left; margin-left: 125px;">volume</span>
+        </div>
+        <div style="width: 200px; margin: 0 auto">
+            <div id="aboutButton" style="display: inline-block" class="button" onmousedown="toggleFooter('about')">About</div>
+        </div>
+    </main>
+
+    <footer id="aboutFooter" style="z-index: 1" class="short">
+        <p>This is a simple implementation of Breakout, made by AJ Weeks in August 2015.</p>
+        <p>Play more of my games at <a href="http://ajweeks.com/games">ajweeks.com/games</a></p>
+        <p>You can view the source at <a href="http://github.com/ajweeks/breakout/">github.com/ajweeks/breakout</a></p>
+    </footer>
+</body>
+</html>

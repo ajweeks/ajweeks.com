@@ -1,0 +1,469 @@
+---
+permalink: /mirrors/
+---
+
+<!DOCTYPE html>
+<!-- Copyright AJ Weeks 2015 -->
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../games/mirrors/res/logo.ico">
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <meta name="keywords" content="mirrors, js, html, css, mirrors-js, game, webgame">
+    <meta name="description" content="A 2D tile-based laser-filled game created by AJ Weeks">
+    <meta name="author" content="AJ Weeks">
+    <link rel="icon" href="../games/mirrors/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+        @font-face {
+            font-family: YanoneKaffeesatzThin;
+            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Thin.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: YanoneKaffeesatzLight;
+            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Light.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: YanoneKaffeesatz;
+            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: YanoneKaffeesatzBold;
+            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Bold.ttf') format('truetype');
+        }
+    </style>
+    <style type="text/css">
+        html {
+            /* PREVENT TEXT HIGHLIGHTING SITE-WIDE */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            font-family: 'YanoneKaffeesatzLight', sans-serif;
+        }
+        body {
+            background: #191919;
+            margin: 0;
+            min-width: 1130px;
+            min-height: 600px; /* Pretty much useless, nothing is really based on the height in css... */
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        input {
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+        h2 {
+            font-weight: normal;
+            font-size: 36px;
+            color: white;
+            text-align: center;
+            cursor: default;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            cursor: default;
+        }
+        #mainmenubtns {
+            margin: 7% auto;
+        }
+
+        #mainmenubtns div {
+          width: 180px;
+          height: 80px;
+          line-height: 80px;
+        }
+
+        [class~=button] {
+            color: white;
+            cursor: pointer;
+            margin: 6px auto;
+            background-color: #3b154b;
+            text-align: center;
+            font-size: 28px;
+            width: 130px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 4px;
+        }
+
+        .lvlselect {
+            background-color: #3e3e3e;
+            cursor: default;
+            box-shadow: none;
+        }
+
+        .lvlselect.enabled {
+            cursor: pointer;
+            box-shadow: inherit;
+            background-color: #3B154B;
+        }
+
+        .lvlselect.locked {
+            cursor: default;
+            box-shadow: none;
+            background-color: #1c0a23;
+        }
+
+        /* TODO implement boss levels? LATER */
+
+        /*.bosslvl.enabled {
+            color: #DDD;
+            background-color: #1E0A26;
+        }
+
+        .bosslvl.enabled:hover {
+            box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 12px inset !important;
+        }*/
+
+        .button:hover:not(.lvlselect), .lvlselect.enabled:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 12px inset;
+            text-shadow: black 1px 1px 10px;
+        }
+
+        #darken {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 1499999;
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #darken.hidden {
+          background-color: rgba(0, 0, 0, 0.0);
+          z-index: -200;
+        }
+
+        #popup {
+          position: absolute;
+          top: 125px;
+          left: 50%;
+          margin-left: -135px;
+          padding: 6px 10px;
+          border: 4px ridge #CC9900;
+          border-color: #C49F05 #A58500 #AA8900 #C9A201;
+          border-radius: 3px;
+          z-index: 1500000;
+          background-color: black;
+          color: white;
+          text-align: center;
+          transition: all 0.3s;
+        }
+
+        #popup.hidden {
+          left: -1920px;
+        }
+
+        #popup h3 {
+          margin: 10px 0;
+        }
+
+        #popup p {
+          font-size: 20px;
+        }
+
+        #popup textarea {
+          resize: none;
+          overflow-y: hidden;
+        }
+
+        #popupClose {
+          float: right;
+          margin: -5px -2px;
+          font-size: 18px;
+          cursor: pointer;
+          color: lightgray;
+          text-decoration: none;
+        }
+
+        #popupClose:hover {
+            color: white;
+            text-shadow: 1px 1px 10px white;
+        }
+
+        .popupButton {
+            display: inline-block;
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            margin: 4px;
+            font-size: 24px;
+        }
+
+        .selectionTile {
+          position: relative;
+          height: 64px;
+          width: 64px;
+        }
+
+        .selectionTile p {
+          color: white;
+          text-align: center;
+          height: 44px;
+          padding-top: 20px;
+          font-size: 20px;
+          margin: 0;
+        }
+
+        .selectionTile p:hover {
+          text-shadow: 0 0 3px #BFFFBF;
+        }
+
+        #backarrow, #forwardarrow {
+            color: aliceblue;
+            background-color: rgba(25, 25, 25, 0.8);
+            cursor: default;
+            position: fixed;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 5001;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #backarrow {
+            left: 0;
+        }
+
+        #forwardarrow {
+            right: 0;
+        }
+
+        #forwardarrow p, #backarrow p {
+            margin-top: 400%;
+            font-size: 48px;
+        }
+
+        .page {
+            position: relative;
+            display: inline-block;
+            margin: 0 60px;
+        }
+
+        /* represents a column of buttons in the lvl selection area */
+        .col {
+            position: relative;
+            display: inline-block;
+            margin: 0 60px;
+        }
+
+        #gameboard {
+            background: transparent;
+            cursor: pointer;
+            position: absolute;
+        }
+        #gamecanvas, #lvledittilescanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #lvledittilescanvas  {
+          z-index: -1;
+        }
+        #lvledittilesarea {
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .row { height: 64px; }
+        .tile {
+            position: absolute;
+            height: 64px;
+            width: 64px;
+        }
+
+        /*  TO MAKE SOMETHING "STICK" TO THE BOTTOM OF THE WINDOW, SET: { position: fixed, left: 0px, bottom: 0px; }  */
+
+        #infoarea {
+            color: aliceblue;
+            margin: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 22px;
+            z-index: 5005;;
+        }
+        #infoarea div {
+            margin: 10px 5px;
+            cursor: default;
+        }
+        #infoarea ul {
+            margin: 0;
+            padding: 0 25px;
+        }
+        #infoarea li {
+            margin: 0;
+            padding: 2px 5px;
+            font-family: inherit;
+            list-style-type: square;
+        }
+        #infoarea [onclick] {
+            cursor: pointer;
+        }
+        #infoarea [onclick]:hover {
+            text-shadow: 0 0 3px #BFFFBF;
+        }
+
+        #optionsinfo, #aboutinfo {
+            position: absolute;
+            left: 50%;
+            margin-left: -20%;
+            margin-top: 100px;
+            width: 50%;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .optionbox {
+            background-color: #111;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .button.disabled {
+            background-color: #777;
+            cursor: default;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a {
+            color: #810101;
+        }
+
+        a:hover {
+            color: #730202;
+        }
+
+        #versionNumber {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            opacity: 0.5;
+            margin: 8px;
+            font-size: 20px;
+            z-index: 100000;
+            color: white;
+        }
+        #versionNumber:hover {
+            color:darkgray;
+            cursor: pointer;
+        }
+    </style>
+    <script src="../games/mirrors/external/stats.min.js"></script>
+    <script src="../games/mirrors/main.js"></script>
+</head>
+<body>
+<div id="game">
+    <h2>Mirrors</h2>
+
+    <div id="mainmenubtns">
+        <div class="button" id="playButton" onclick="Game.sm.enterState('levelselect');">Play</div>
+        <div class="button" id="optionsButton" onclick="Game.sm.enterState('option');">Options</div>
+        <div class="button" id="aboutButton" onclick="Game.sm.enterState('about');">About</div>
+    </div>
+
+    <div id="aboutstate" style="display: none">
+        <div class="button" onclick="if (clickType(event)==='left') Game.sm.enterPreviousState();" style="margin-left: 240px;">Back</div>
+        <div id="aboutinfo">
+            <!-- <p>You can read more about the game here: <a href="https://liqwidice.wordpress.com/portfolio/mirrors-js" target="_blank">liqwidice.wordpress.com/portfolio/mirrors-js</a></p> -->
+            <!-- <p>My personal blog can be found at: <a href="https://ajweeks.wordpress.com" target="_blank">ajweeks.wordpress.com</a></p> -->
+            <!-- <p>Mirrors was developed entirely by AJ Weeks in early 2015 using TypeScript. The project first started off as a school assignment in late 2014, written in Java.</p> -->
+            <p>Mirrors was created by AJ Weeks in early 2015 using TypeScript.</p>
+            <p>You see his other games at <a href="http://ajweeks.com/games/">ajweeks.com/games</a></p>
+            <p>If you have any comments or criticisms send him a mesage on twitter <a href="https://twitter.com/liqwidice" target="_blank">@liqwidice</a></p>
+            <p>Fork the project on Github at <a href="https://github.com/ajweeks/mirrors-ts" target="_blank">github.com/ajweeks/mirrors-ts</a></p>
+            <a style="position: fixed; display: block; right: 20px; bottom: 5px; font-size: 14px; color: gray; cursor: pointer;" onclick="toggleDebug();">(Debug mode: hit 9!)</a>
+            <!-- <p>For serious business inquiries, you can email me at <a href="mailto:ajweeks@shaw.ca">ajweeks@shaw.ca</a></p> -->
+        </div>
+    </div>
+
+    <div id="optionstate" style="display: none">
+        <div class="button" onclick="if (clickType(event)==='left') { Game.sm.enterPreviousState(); }" style="margin-left: 240px;">Back</div>
+        <div id="optionsinfo">
+            <div class="optionbox" style="width: 250px; margin: 0 auto;">
+                <h2 style="margin: 0">Sounds</h2>
+                <div id="soundOff" class="button" style="width: 45px; margin-top: 0px; display: inline-block;" onclick="if (clickType(event)==='left' && get('soundOff').className==='button') { Sound.toggleMute(); Sound.play(Sound.select); get('soundOn').className='button'; get('soundOff').className='button disabled'; }">Off</div>
+                <div id="soundOn" class="button disabled" style="width: 45px; margin-top: 10px; display: inline-block;" onclick="if (clickType(event)==='left' && get('soundOn').className==='button') { Sound.toggleMute(); Sound.play(Sound.select); get('soundOff').className='button'; get('soundOn').className='button disabled'; }">On</div>
+            </div>
+            <div class="button" style="width: 180px; margin-top: 30px;" onclick="if (clickType(event)==='left') { Sound.play(Sound.select); Game.sm.currentState().setResetAllLevelsPopup(); }">Reset All Levels</div>
+        </div>
+    </div>
+
+    <div id="levelselectstate" style="display: none;"></div>
+
+    <div id="gameboard" oncontextmenu="return false;" style="display: none">
+
+        <audio id="blipSound"><source src="../games/mirrors/res/sounds/blip.wav"></source></audio>
+        <audio id="selectSound"><source src="../games/mirrors/res/sounds/select.wav"></source></audio>
+        <audio id="select3Sound"><source src="../games/mirrors/res/sounds/select3.wav"></source></audio>
+        <audio id="winSound"><source src="../games/mirrors/res/sounds/win.wav"></source></audio>
+        <audio id="wizzleSound"><source src="../games/mirrors/res/sounds/wizzle.wav"></source></audio>
+
+        <div class="button" onclick="if (clickType(event)==='left') Game.sm.enterPreviousState();" style="position: fixed; top: 120px; left: 12%;">Back</div>
+        <div class="button" onclick="if (clickType(event)==='left') { Sound.play(Sound.select); Game.sm.currentState().setResetLevelPopup(); }  " style="position: fixed; top: 170px; left: 12%;">Reset</div>
+        <h3 id="levelNumHeading" style="position: absolute; top: -53px; left: 6px; font-size: 24px; color: gray;"></h3>
+        <canvas id="gamecanvas" onmousedown="boardClick(event, true)" ></canvas>
+    </div>
+
+    <div id="lvledittilesarea" style="display: none">
+        <div id="lvledittiles"></div>
+        <canvas id="lvledittilescanvas"></canvas>
+    </div>
+
+    <div id="darken" class="hidden" oncontextmenu="return false;" onclick="Sound.play(Sound.select); Game.clearPopup()"></div>
+
+    <div id="popupHolder" oncontextmenu="return false;">
+      <div id="popup" class="hidden"></div>
+    </div>
+
+    <div id="versionNumber"></div>
+
+    <div id="infoarea" style="display: none;">
+        <div id="shortcuts">
+            <b>Shortcuts:</b>
+            <ul>
+                <li id="debugInfo" onclick="toggleDebug();">Debug - 9</li>
+                <li id="lvlEditInfo" onclick="toggleLevelEditMode();">Lvl Edit Mode - 0</li>
+            </ul>
+        </div>
+        <div id="tile_types">
+            <b>Tile types:</b>
+            <ul>
+                <li>0 - BLANK</li>
+                <li>1 - MIRROR</li>
+                <li>2 - POINTER</li>
+                <li>3 - RECEPTOR</li>
+            </ul>
+        </div>
+        <div id="color_types">
+            <b>Colour IDs:</b>
+            <ul>
+                <li>0 - RED</li>
+                <li>1 - GREEN</li>
+                <li>2 - BLUE</li>
+                <li>3 - WHITE</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

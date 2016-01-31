@@ -1,0 +1,44 @@
+---
+layout: default
+title: Circuit Simulator
+navlink: false
+---
+
+<style type="text/css">
+    main {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .images {
+        text-align: center;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+</style>
+
+<main>
+    <h2>Circuit Simulator</h2>
+
+    <p>This is a simple electronic circuit simulator that I made in pure Java from scratch.</p>
+
+    <p>The simulator features three types of components: wires, inverters, and power sources.
+        Wires and power sources connect to any neighbor that they can, while inverters only connect to
+        their neighbors which are directly in front of and behind them.</p>
+
+    <p>I&#8217;ve implemented saving and loading of the grid, various keyboard shortcuts, and a helpful
+        <span title="(F3)" style="color: #CCC; cursor: copy">debug mode</span>. I wanted to avoid using swing entirely, for various reasons, and
+        therefore implemented the buttons completely from scratch, rendering everything using
+        Java's Abstract Windowing Toolkit.</p>
+
+    <p>This was a school project for Computer Science 20 and took around one month of in-school work.</p>
+
+    <div class="images">
+        <img src="/res/circuit_screenshot_full.png" width="434" height="371"></img>
+        <img src="/res/circuit_screenshot_2.png" width="434" height="371"></img>
+    </div>
+
+    <p>You can download the game <a href="http://www.dropbox.com/s/61pos37tckfumoc/circuit.zip?dl=0" target="_blank">here</a></p>
+
+    <p>The source code can be found on <a href="http://github.com/ajweeks/circuit/" target="_blank">GitHub</a>.</p>
+</main>
