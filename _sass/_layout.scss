@@ -2,12 +2,13 @@
  * Site header
  */
 #site-header {
-    border-top: 5px solid $grey-color-dark;
+    // border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
+    width: 100%;
+    background-color: #2B3C2D;
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
 }
 
 .site-title {
@@ -162,13 +163,17 @@
     }
 }
 
-
-
 /**
  * Page content
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-top: 70px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $primary-background-color;
+    min-height: 300px;
 }
 
 .page-heading {
