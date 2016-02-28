@@ -33,6 +33,7 @@ permalink: /breakout/
     a {
         color: #BBB;
         text-decoration: none;
+        text-shadow: 1px 1px 2px #000;
     }
     a:hover {
         color: #FFF;
@@ -93,7 +94,7 @@ permalink: /breakout/
         bottom: 0;
     }
     footer.short {
-        margin-top: -130px;
+        margin-top: -206px;
     }
     </style>
     <script src="../games/breakout/main.js"></script>
@@ -110,7 +111,7 @@ permalink: /breakout/
         <canvas id="infoCanvas" width="720" height="80" style="border-top-left-radius: 15px; border-top-right-radius: 15px"></canvas>
         <canvas id="gameCanvas" width="720" height="480" onmousemove="Mouse.update(event)" onmousedown="Mouse.down(event)" onmouseup="Mouse.up(event)">Sorry, your browser does not support canvases :(</canvas>
         <div style="margin-top: 15px;">
-            <input id="volumeSlider" type="range" value="30" style="display: block; margin-left: 92px;" onchange="Sound.changeVolume()"/>
+            <input id="volumeSlider" type="range" value="10" style="display: block; margin-left: 92px;" onchange="Sound.changeVolume()"/>
             <span style="font-size: 22px; float: left; margin-left: 125px;">volume</span>
         </div>
         <div style="width: 200px; margin: 0 auto">
@@ -122,6 +123,8 @@ permalink: /breakout/
         <p>This is a simple implementation of Breakout, made by AJ Weeks in August 2015.</p>
         <p>Play more of my games at <a href="http://ajweeks.com/games">ajweeks.com/games</a></p>
         <p>You can view the source at <a href="http://github.com/ajweeks/breakout/">github.com/ajweeks/breakout</a></p>
+        <br />
+        <p>You can also use your arrow keys, or WASD, along with the space bar to play, but I find the mouse much easier.</p>
     </footer>
 </body>
 </html>
