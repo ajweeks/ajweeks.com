@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
+    background-image: url("../res/footer_lodyas.png");
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -41,8 +42,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -50,8 +49,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -63,8 +60,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -80,16 +75,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -104,11 +95,13 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        font-weight: bold;
     }
 }
 
-
+a img:hover {
+    box-shadow: 0 0 1px 3px rgba(240,240,240,0.4);
+}
 
 /**
  * Blockquotes
@@ -125,8 +118,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -154,8 +145,6 @@ pre {
     }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -176,8 +165,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -189,8 +176,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons
