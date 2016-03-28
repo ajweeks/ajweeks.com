@@ -12,10 +12,10 @@ permalink: /TM495/
     <script src="../games/TM495/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../games/TM495/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../games/TM495/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../games/TM495/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../games/TM495/favicons/favicon-16x16.png" sizes="16x16">
     <style type="text/css">
     * {
         /* PREVENT TEXT HIGHLIGHTING SITE-WIDE */
@@ -73,6 +73,14 @@ permalink: /TM495/
         height: 48px;
         box-shadow: inset 2px 2px 1px black;
     }
+    #gameBackButton {
+        height: 30px;
+        line-height: 30px;
+    }
+    #gameBackButton:hover {
+        height: 28px !important;
+    }
+
     #gameCanvas {
         vertical-align: top; /* Removes gap between canvases */
         box-shadow: 0 0 40px rgba(15, 15, 15, 0.3), 0 9px 10px -6px #000;
@@ -86,6 +94,8 @@ permalink: /TM495/
         margin-top: 120px;
     }
     #gameplayTabs {
+        height:35px;
+        line-height: 35px;
         width: 720px;
         margin: 0 auto;
     }
@@ -99,6 +109,17 @@ permalink: /TM495/
         box-shadow: 2px 2px 1px rgba(1, 1, 1, 0.5), inset -1px -1px 1px rgba(1, 1, 1, 0.5);
         text-shadow: 1px 1px 1px #000;
     }
+    #infoBox {
+        display: block;
+        width: 280px;
+        color: #D2D2D2;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;
+        background-color: #2D1204;
+        border-radius: 19px;
+        box-shadow: 0 0 23px 4px rgba(0, 0, 0, 0.3) inset;
+    }
     </style>
 </head>
 <body>
@@ -106,8 +127,7 @@ permalink: /TM495/
     <img src="../games/TM495/res/TM495_title.png" />
 
     <div id="mainMenuState">
-        <div id="resumeButton" class="button" onclick="buttonClick('resumeButton', event, function() { enterState('loading'); })">Resume</div>
-        <div id="playButton" class="button enabled" onclick="buttonClick('playButton', event, function() { enterState('loading'); })">New Game</div>
+        <div id="playButton" class="button enabled" onclick="buttonClick('playButton', event, function() { enterState('loading'); })">Play</div>
         <div id="aboutButton" class="button enabled" onclick="buttonClick('aboutButton', event, function() { enterState('about'); })">About</div>
     </div>
 
@@ -116,7 +136,7 @@ permalink: /TM495/
     </div>
 
     <div id="aboutState" style="display: none">
-        <div id="aboutBackButton" class="button enabled" onclick="buttonClick('aboutBackButton', event, function() { Main.sm.enterPreviousState(); })">Back</div>
+        <div id="aboutBackButton" class="button enabled backbutton" onclick="buttonClick('aboutBackButton', event, function() { Main.sm.enterPreviousState(); })">Back</div>
         <p>
             TM495 is a lumberjack game made by AJ Weeks in December 2015.
         </p>
@@ -138,18 +158,20 @@ permalink: /TM495/
             </a>
         </div>
         <div>
-            <p>You can find more of my games at <a href="http://ajweeks.com/games">ajweeks.com/games</a></p>
+            <p>You can find more of my games at <a href="/games">ajweeks.github.io/games</a></p>
         </div>
     </div>
 
-    <audio id="hit2"><source src="../games/TM495/res/sounds/hit2.wav"></source></audio>
-    <audio id="hit3"><source src="../games/TM495/res/sounds/hit3.wav"></source></audio>
-    <audio id="hit4"><source src="../games/TM495/res/sounds/hit4.wav"></source></audio>
+    <!-- <audio id="hit2"><source src="res/sounds/hit2.wav"></source></audio>
+    <audio id="hit3"><source src="res/sounds/hit3.wav"></source></audio>
+    <audio id="hit4"><source src="res/sounds/hit4.wav"></source></audio> -->
+    <audio id="chop1"><source src="../games/TM495/res/sounds/chop1.wav"></source></audio>
+    <audio id="chop2"><source src="../games/TM495/res/sounds/chop2.wav"></source></audio>
+    <audio id="chop3"><source src="../games/TM495/res/sounds/chop3.wav"></source></audio>
     <audio id="pickup"><source src="../games/TM495/res/sounds/pickup.wav"></source></audio>
     <audio id="powerup"><source src="../games/TM495/res/sounds/powerup.wav"></source></audio>
 
     <div id="gameState" style="display: none">
-        <div id="gameBackButton" class="button enabled" onclick="buttonClick('gameBackButton', event, function() { Main.sm.enterPreviousState(); })">Back</div>
         <div id="gameWindow">
             <!-- TODO(AJ): Find out how to add fullscreen option -->
             <div id="gameContent"></div>
@@ -157,19 +179,21 @@ permalink: /TM495/
             <div id="woodInfoTab">Wood: 0</div>
             <div id="paperInfoTab">Paper: 0</div>
             <div id="volume" style="display: inline-block">
-                <input id="volumeSlider" type="range" value="75" style="" onchange="Sound.changeVolume()"/>
-                <span style="display: block; font-size: 22px; margin-left: 125px;">volume</span>
+                <span style="margin-right: 7px;">Volume:</span>
+                <input id="volumeSlider" type="range" value="75" style="height: 9px; width: 85px;" onchange="Sound.changeVolume()"/>
             </div>
         </div>
         <br />
-        <span>
+        <div id="infoBox" style="display: block;">
             WASD or arrow keys to move
             <br />
             Space to chop
             <br />
             Shift to sprint
-        </span>
+        </div>
     </div>
+    <br />
+    <div id="gameBackButton" class="button enabled backbutton" onclick="buttonClick('gameBackButton', event, function() { Main.sm.enterPreviousState(); })">Back</div>
     <footer>
         AJ Weeks 2016
     </footer>
