@@ -6,6 +6,8 @@ layout: default
 
 ### News
 
+### <span style="font-size: 16px">(2016-06-15)</span> [Super Mario World Remake](/games/SuperMarioWorld/)
+
 ### <span style="font-size: 16px">(2016-06-01)</span> [Fiat 131](/3D/fiat_131/)
 
 ### <span style="font-size: 16px">(2016-03-28)</span> [High poly modeling assignment](/3D/3_objects/)
