@@ -20,7 +20,7 @@ div(links)
     <a href="https://sketchfab.com/ajweeks" target="_blank"><img src="res/sketchfab.png" width="62" height="62"></a>
 </div> -->
 
-If you enjoy any of my (free) games and are feeling generous, I would greatly appreciate any donations.
+<!-- If you enjoy any of my (free) games and are feeling generous, I would greatly appreciate any donations.
 
 <br />
 <div style="text-align: center">
@@ -34,5 +34,6 @@ If you enjoy any of my (free) games and are feeling generous, I would greatly ap
 <br />
 
 Thanks so much
+-->
 
 -AJ

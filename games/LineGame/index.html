@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Line Game</title>
+    <script src="main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    * {
+        /* PREVENT TEXT HIGHLIGHTING SITE-WIDE */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        cursor: default;
+
+        font-family: 'Sarala', sans-serif;
+        color: #EEE;
+    }
+
+    html {
+        background-color: rgb(82, 32, 32);
+        text-align: center;
+    }
+    h1
+    {
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #gameCanvas {
+        box-shadow: 0 0 15px 0 rgba(15, 15, 15, 0.6);
+    }
+
+    footer {
+        background-color: rgb(66, 25, 25);
+        color: rgb(242, 225, 225);
+        text-shadow: 2px 2px 2px #000;
+        bottom: 0;
+        width: 100%;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    footer a:hover {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>Line Game</h1>
+    <main>
+        <div id="gameWindow">
+            <canvas id="gameCanvas" width="10" height="800"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <a href="http://ajweeks.com/" style="text-decoration: none; cursor: pointer">AJ Weeks 2016</a>
+    </footer>
+</body>
+</html>
