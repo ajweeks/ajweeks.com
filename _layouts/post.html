@@ -14,7 +14,6 @@ layout: default
 
 <div class="post-nav">
     {% if page.previous %}<a href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
-    <!-- {{% if (page.previous != nil) and (page.next != nil) %}} | {{% endif %}} -->
     {% if page.next %}<a href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
 </div>
 
