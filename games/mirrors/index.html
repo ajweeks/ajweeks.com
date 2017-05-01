@@ -6,7 +6,7 @@ permalink: /mirrors/
 <!-- Copyright AJ Weeks 2015 -->
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="../games/mirrors/res/logo.ico">
+    <link rel="shortcut icon" href="../games/mirrors/assets/img/logo.ico">
     <meta content="text/html;charset=utf-8" http-equiv="content-type">
     <meta name="keywords" content="mirrors, js, html, css, mirrors-js, game, webgame">
     <meta name="description" content="A 2D tile-based laser-filled game created by AJ Weeks">
@@ -15,19 +15,19 @@ permalink: /mirrors/
     <style type="text/css">
         @font-face {
             font-family: YanoneKaffeesatzThin;
-            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Thin.ttf') format('truetype');
+            src: url('../games/mirrors/assets/img/fonts/YanoneKaffeesatz-Thin.ttf') format('truetype');
         }
         @font-face {
             font-family: YanoneKaffeesatzLight;
-            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Light.ttf') format('truetype');
+            src: url('../games/mirrors/assets/img/fonts/YanoneKaffeesatz-Light.ttf') format('truetype');
         }
         @font-face {
             font-family: YanoneKaffeesatz;
-            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+            src: url('../games/mirrors/assets/img/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
         }
         @font-face {
             font-family: YanoneKaffeesatzBold;
-            src: url('../games/mirrors/res/fonts/YanoneKaffeesatz-Bold.ttf') format('truetype');
+            src: url('../games/mirrors/assets/img/fonts/YanoneKaffeesatz-Bold.ttf') format('truetype');
         }
     </style>
     <style type="text/css">
@@ -412,11 +412,11 @@ permalink: /mirrors/
 
     <div id="gameboard" oncontextmenu="return false;" style="display: none">
 
-        <audio id="blipSound"><source src="../games/mirrors/res/sounds/blip.wav"></source></audio>
-        <audio id="selectSound"><source src="../games/mirrors/res/sounds/select.wav"></source></audio>
-        <audio id="select3Sound"><source src="../games/mirrors/res/sounds/select3.wav"></source></audio>
-        <audio id="winSound"><source src="../games/mirrors/res/sounds/win.wav"></source></audio>
-        <audio id="wizzleSound"><source src="../games/mirrors/res/sounds/wizzle.wav"></source></audio>
+        <audio id="blipSound"><source src="../games/mirrors/assets/img/sounds/blip.wav"></source></audio>
+        <audio id="selectSound"><source src="../games/mirrors/assets/img/sounds/select.wav"></source></audio>
+        <audio id="select3Sound"><source src="../games/mirrors/assets/img/sounds/select3.wav"></source></audio>
+        <audio id="winSound"><source src="../games/mirrors/assets/img/sounds/win.wav"></source></audio>
+        <audio id="wizzleSound"><source src="../games/mirrors/assets/img/sounds/wizzle.wav"></source></audio>
 
         <div class="button" onclick="if (clickType(event)==='left') Game.sm.enterPreviousState();" style="position: fixed; top: 120px; left: 12%;">Back</div>
         <div class="button" onclick="if (clickType(event)==='left') { Sound.play(Sound.select); Game.sm.currentState().setResetLevelPopup(); }  " style="position: fixed; top: 170px; left: 12%;">Reset</div>

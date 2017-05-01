@@ -406,9 +406,9 @@ function createPopup(type) {
                 '<span style="color: #EAA">board</span>, whichever <em style="color: #AAE">square</em>  ' +
                 'your opponent picked last turn determines ' +
                 'which <em style="color: #EAA">board</em> you must play in this turn.</p>' +
-                '<img src="../games/tictactoe/res/large_board.png" style="margin-right: 20px"></img>' +
-                '<img src="../games/tictactoe/res/arrow.png" style="margin-bottom: 35px;"></img>' +
-                '<img src="../games/tictactoe/res/small_board.png" style="margin-left: 20px"></img>' +
+                '<img src="../games/tictactoe/assets/img/large_board.png" style="margin-right: 20px"></img>' +
+                '<img src="../games/tictactoe/assets/img/arrow.png" style="margin-bottom: 35px;"></img>' +
+                '<img src="../games/tictactoe/assets/img/small_board.png" style="margin-left: 20px"></img>' +
                 '<p>For example: Playing in the top-right <em style="color: #AAE">square</em> of a small ' +
                 '<span style="color: #EAA">board</span>, forces your opponent to play in the ' +
                 'top-right <em style="color: #EAA">board</em> on their turn.</p>' +

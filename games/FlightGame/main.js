@@ -10,7 +10,7 @@ var Main = (function () {
         Main.plane = new Plane();
         Main.reset();
         Main.arrowsImage = new Image();
-        Main.arrowsImage.src = "res/arrows.png";
+        Main.arrowsImage.src = "/assets/img/arrows.png";
         Main.loop();
     };
     Main.generateObstacle = function (previousX) {

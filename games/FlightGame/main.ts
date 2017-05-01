@@ -22,7 +22,7 @@ class Main {
         Main.reset();
 
         Main.arrowsImage = new Image();
-        Main.arrowsImage.src = "res/arrows.png";
+        Main.arrowsImage.src = "/assets/img/arrows.png";
 
         Main.loop();
     }
