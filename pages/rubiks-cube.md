@@ -17,7 +17,6 @@ This is a personal project I began to test my new knowledge of 3D application pr
  - Auto scramble
 
 ##### Planned features:
- - Chamfered edges using a geometry shader
  - Higher fidelity graphics
 
 <img src="http://i.imgur.com/c23Fdst.gif" width="45%" style="padding-left: 20%"/>
