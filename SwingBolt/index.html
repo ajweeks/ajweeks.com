@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Swing Bolt</title>
+    <link rel="shortcut icon" href="http://ajweeks.com/logo.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://ajweeks.com/css/main.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build_WebGL.json", {onProgress: UnityProgress});
+    </script>
+
+    <style type="text/css">
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .swing-bolt-desc {
+        text-align: left;
+        width: 1024px;
+        margin: auto;
+      }
+      p {
+        font-size: 1.3em;
+        line-height: 1.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Swing Bolt</h1>
+    <div class="unity" style="width: 1024px; margin: auto">
+      <div class="webgl-content">
+        <div id="gameContainer" style="width: 1024px; height: 576px; margin: auto"></div>
+        <div class="footer" style="background-color: #FFF">
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swing-bolt-desc">
+      <p>
+        This is an updated version of my entry for the Ludum Dare 39 game jam competition.
+      </p>
+      <p>
+        Read more on my blog: <a href="https://ajweeks.wordpress.com/2017/08/03/ld39-swing-bolt/" target="_blank">ajweeks.wordpress.com/../ld39-swing-bolt/</a>
+      </p>
+      <p>
+        You can find the submission page here: <a href="https://ldjam.com/events/ludum-dare/39/swing-bolt" target="_blank">ldjam.com/events/ludum-dare/39/swing-bolt</a>
+      </p>
+      <p>
+        Contact me on Twitter <a href="https://twitter.com/liqwidice" target="_blank">@liqwidice</a>
+      </p>
+  </div>
+  <span style="background-color: #EEE; padding: 10px 25px"><a href="http://ajweeks.com">ajweeks.com</a></span>
+  </body>
+</html>

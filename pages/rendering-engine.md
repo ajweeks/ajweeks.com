@@ -10,12 +10,13 @@ author: AJ Weeks
 
 - C++, Vulkan, OpenGL, Direct3D 11
 
-This is a personal project undertaken to further my understanding of graphics APIs and give myself a base to work with to explore more advanced graphics techniques.
+This is a rendering engine which supports basic rendering features for Vulkan, OpenGL 4+, and Direct3D 11.
 
-Some screenshots demonstrating features currently implemented:
+The goal of the project was to learn about the three APIs and compare their strengths and weaknesses.
 
-<div class="hoverwraper">
-  <img class="image" src="/assets/img/render-api-01.jpg" width="46%"/>
-  <img class="image" src="/assets/img/render-api-03.jpg" width="53%" style="float: right" />
-  <img class="image" src="/assets/img/render-api-02.jpg" width="100%" style="padding-top: 7px" />
-</div>
+You can find the source code on [GitHub](https://github.com/ajweeks/Rendering-Engine)
+
+<img class="image" src="/assets/img/render-api-04.jpg" width="100%" style="padding-top: 7px" />
+<img class="image" src="/assets/img/render-api-03.jpg" width="100%" style="padding-top: 7px"/>
+<img class="image" src="/assets/img/render-api-02.jpg" width="46%"/>
+<img class="image" src="/assets/img/render-api-01.jpg" width="53%" style="float: right" />
