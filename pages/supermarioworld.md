@@ -30,16 +30,16 @@ See it in action:
 <iframe width="724" height="400" src="https://www.youtube.com/embed/9ZdGhZt0MlI" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<img src="/assets/img/SMW_01.jpg" width="49%"/>
-<img src="/assets/img/SMW_03.jpg" width="49%" class="floatright"/>
-<img src="/assets/img/SMW_04.jpg" width="49%"/>
-<img src="/assets/img/SMW_02.jpg" width="49%" class="floatright"/>
-<img src="/assets/img/SMW_07.jpg" width="49%"/>
-<img src="/assets/img/SMW_05.jpg" width="49%" class="floatright"/>
-<img src="/assets/img/SMW_06.jpg" width="49%"/>
-<img src="/assets/img/SMW_08.jpg" width="49%" class="floatright"/>
-<img src="/assets/img/SMW_09.jpg" width="49%"/>
-<img src="/assets/img/SMW_10.jpg" width="49%" class="floatright"/>
+<a href="/assets/img/SMW_01.jpg"><img src="/assets/img/SMW_01.jpg" width="49%"/></a>
+<a href="/assets/img/SMW_03.jpg"><img src="/assets/img/SMW_03.jpg" width="49%" class="floatright"/></a>
+<a href="/assets/img/SMW_04.jpg"><img src="/assets/img/SMW_04.jpg" width="49%"/></a>
+<a href="/assets/img/SMW_02.jpg"><img src="/assets/img/SMW_02.jpg" width="49%" class="floatright"/></a>
+<a href="/assets/img/SMW_07.jpg"><img src="/assets/img/SMW_07.jpg" width="49%"/></a>
+<a href="/assets/img/SMW_05.jpg"><img src="/assets/img/SMW_05.jpg" width="49%" class="floatright"/></a>
+<a href="/assets/img/SMW_06.jpg"><img src="/assets/img/SMW_06.jpg" width="49%"/></a>
+<a href="/assets/img/SMW_08.jpg"><img src="/assets/img/SMW_08.jpg" width="49%" class="floatright"/></a>
+<a href="/assets/img/SMW_09.jpg"><img src="/assets/img/SMW_09.jpg" width="49%"/></a>
+<a href="/assets/img/SMW_10.jpg"><img src="/assets/img/SMW_10.jpg" width="49%" class="floatright"/></a>
 
 **Download** the game [here](https://www.dropbox.com/s/uwgc71l5n1k3hdk/SuperMarioWorld_v1.0.zip?dl=0)
 

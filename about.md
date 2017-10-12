@@ -6,11 +6,15 @@ permalink: /about/
 
 ## About
 
-I'm AJ Weeks, a game development student at [Digital Arts and Entertainment](http://digitalartsandentertainment.be/) in Kortrijk, Belgium.
+I'm AJ Weeks, a 20 year old game development student at [Digital Arts and Entertainment](http://digitalartsandentertainment.be/) in Kortrijk, Belgium.
 
 I’m looking for an **internship** starting in **February 2018**, feel free to get in contact with me here: [contact@ajweeks.com](mailto:contact@ajweeks.com)
 
-I can be reached most easily on Twitter: [<i class="icon fa fa-twitter" aria-hidden="true" style="color: #222"></i> @liqwidice](http://twitter.com/liqwidice).
+Feel free to contact me on Twitter: [<i class="icon fa fa-twitter" aria-hidden="true" style="color: #222"></i> @liqwidice](http://twitter.com/liqwidice).
+
+Connect with me on LinkedIn: [<i class="icon fa fa-linkedin-square" aria-hidden="true" style="color: #222"></i> linkedin.com/in/aj-weeks](https://www.linkedin.com/in/aj-weeks/)
+
+<a href="../assets/img/portrait_1.jpg"><img src="../assets/img/portrait_1.jpg" style="width: 30%; margin-left: auto; margin-right: auto"/></a>
 
 <!-- If you enjoy any of my (free) games and are feeling generous, I would greatly appreciate any donations.
 

@@ -649,7 +649,7 @@ var Player = (function () {
                         this.gameState.entityManager.add(new TreeSectionEntity(x, y, 1 + Math.random() * 2));
                     }
                     this.level.trees[closest].pivot.children[0].material = new THREE.MeshPhongMaterial({
-                        map: THREE.ImageUtils.loadTexture("../games/TM495/assets/img/trunk.png"),
+                        map: THREE.ImageUtils.loadTexture("../games/TM495/res/trunk.png"),
                         transparent: true
                     });
                 }
@@ -876,53 +876,53 @@ var Resource = (function () {
     }
     Resource.loadAll = function () {
         Resource.textureLoader = new THREE.TextureLoader();
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_idle.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_idle.png", function (tex) {
             Resource.playerIdleTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_walking.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_walking.png", function (tex) {
             Resource.playerWalkingTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_running.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_running.png", function (tex) {
             Resource.playerRunningTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_upwards_idle.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_upwards_idle.png", function (tex) {
             Resource.playerUpwardsIdleTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_upwards_walking.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_upwards_walking.png", function (tex) {
             Resource.playerUpwardsWalkingTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_upwards_running.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_upwards_running.png", function (tex) {
             Resource.playerUpwardsRunningTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_downwards_idle.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_downwards_idle.png", function (tex) {
             Resource.playerDownwardsIdleTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_downwards_walking.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_downwards_walking.png", function (tex) {
             Resource.playerDownwardsWalkingTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/player/player_downwards_running.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/player/player_downwards_running.png", function (tex) {
             Resource.playerDownwardsRunningTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/shop.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/shop.png", function (tex) {
             Resource.shopTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/steel_axe.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/steel_axe.png", function (tex) {
             Resource.steelAxeTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/gold_axe.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/gold_axe.png", function (tex) {
             Resource.goldAxeTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/tree_section.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/tree_section.png", function (tex) {
             Resource.treeSectionTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/grass_diffuse.jpg", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/grass_diffuse.jpg", function (tex) {
             Resource.grassTexture = tex;
             Resource.grassTexture.wrapS = Resource.grassTexture.wrapT = THREE.RepeatWrapping;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/tree.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/tree.png", function (tex) {
             Resource.treeTexture = tex;
         });
-        Resource.textureLoader.load("../games/TM495/assets/img/trunk.png", function (tex) {
+        Resource.textureLoader.load("../games/TM495/res/trunk.png", function (tex) {
             Resource.trunkTexture = tex;
         });
         Resource.ALL_LOADED = true;

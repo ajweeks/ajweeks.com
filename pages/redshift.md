@@ -8,33 +8,32 @@ author: AJ Weeks
 
 ## Redshift
 
-- Unity, C#
+- C#, Unity
 
-Two-player sci-fi racer made over the course of one semester.
+Redshift is a fast-paced, high-action, head to head two-player racer set in a stunning low-poly landscape. It was made over the course of three months with three other team members.
 
-Fast-paced, high-action, head to head fighting throughout a stunning low-poly landscape.
+My main roles in the project consisted of; player movement, track generation (using Bézier curves), and camera movement. Although, having only two other programmers meant we all needed to work on many systems.
 
-Use your power-ups and dodge your opponent's to beat them to the finish line!
+You can see my blog posts made throughout the project here: [gameprojectsteam20.wordpress.com/author/ajweeks](https://gameprojectsteam20.wordpress.com/author/ajweeks/)
 
 **Team:**
 
-*Artist:*
-- Evgeni Vdovlov
+- AJ Weeks *(Developer)*
+- [Evgeni Vdovlov *(Artist)*](https://www.artstation.com/evgenivdovlov)
+- [Emilie Van Geel *(Developer)*](http://emilievangeel.com/)
+- Pieter Ophalvens *(Developer)*
 
-*Developers:*
-- Emilie Van Geel
-- AJ Weeks
-- Pieter Ophalvens
+<div class="videoWrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QFYlNuXnN9k" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<img class="image" src="http://i.imgur.com/r5ILceh.png" width="100%"/>
-<img class="image" src="http://i.imgur.com/qbBD6LI.jpg" width="49%"/>
-<img class="image" src="http://i.imgur.com/MsOnes9.png" width="49%" style="float: right"/>
-<img class="image" src="http://i.imgur.com/Nz2hfGz.png" width="49%"/>
-<img class="image" src="http://i.imgur.com/3mgFvjN.jpg" width="49%" style="float: right"/>
-<img class="image" src="http://i.imgur.com/rjImFwT.jpg" width="100%"/>
-<img class="image" src="http://i.imgur.com/zjUR1Ps.png" width="49%"/>
-<img class="image" src="http://i.imgur.com/g1En4Nb.jpg" width="49%" style="float: right"/>
-<img class="image" src="http://i.imgur.com/42OQkpn.png" width="49%"/>
-<img class="image" src="http://i.imgur.com/3dmbJpB.jpg" width="49%" style="float: right"/>
-<img class="image" src="http://i.imgur.com/aYOZfCR.png" width="49%"/>
-<img class="image" src="http://i.imgur.com/jeh0YMl.png" width="49%" style="float: right"/>
+<a href="http://i.imgur.com/r5ILceh.png"><img class="image" src="http://i.imgur.com/r5ILceh.png" width="100%"/></a>
+<a href="http://i.imgur.com/qbBD6LI.jpg"><img class="image" src="http://i.imgur.com/qbBD6LI.jpg" width="49%"/></a>
+<a href="http://i.imgur.com/MsOnes9.png"><img class="image" src="http://i.imgur.com/MsOnes9.png" width="49%" style="float: right"/></a>
+<a href="http://i.imgur.com/Nz2hfGz.png"><img class="image" src="http://i.imgur.com/Nz2hfGz.png" width="49%"/></a>
+<a href="http://i.imgur.com/3mgFvjN.jpg"><img class="image" src="http://i.imgur.com/3mgFvjN.jpg" width="49%" style="float: right"/></a>
+<a href="http://i.imgur.com/rjImFwT.jpg"><img class="image" src="http://i.imgur.com/rjImFwT.jpg" width="100%"/></a>
+<a href="http://i.imgur.com/zjUR1Ps.png"><img class="image" src="http://i.imgur.com/zjUR1Ps.png" width="49%"/></a>
+<a href="http://i.imgur.com/3dmbJpB.jpg"><img class="image" src="http://i.imgur.com/3dmbJpB.jpg" width="49%" style="float: right"/></a>
+<a href="http://i.imgur.com/42OQkpn.png"><img class="image" src="http://i.imgur.com/42OQkpn.png" width="49%"/></a>
+<a href="http://i.imgur.com/aYOZfCR.png"><img class="image" src="http://i.imgur.com/aYOZfCR.jpg" width="49%" style="float: right"/></a>

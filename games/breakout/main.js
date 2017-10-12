@@ -75,7 +75,7 @@ var Level = (function () {
         this.xo = 70;
         this.yo = 25;
         this.heartImg = new Image();
-        this.heartImg.src = "../games/breakout/assets/img/heart.png";
+        this.heartImg.src = "../games/breakout/res/heart.png";
         this.particleGenerators = new Array();
         this.camera.shake(0, -2000);
         this.reset();
@@ -312,34 +312,34 @@ var Block = (function () {
         Block.block_images = new Array(10);
         Block.block_images[0] = null;
         Block.block_images[1] = new Image();
-        Block.block_images[1].src = "../games/breakout/assets/img/blocks/grey.png";
+        Block.block_images[1].src = "../games/breakout/res/blocks/grey.png";
         Block.block_images[2] = new Image();
-        Block.block_images[2].src = "../games/breakout/assets/img/blocks/red.png";
+        Block.block_images[2].src = "../games/breakout/res/blocks/red.png";
         Block.block_images[3] = new Image();
-        Block.block_images[3].src = "../games/breakout/assets/img/blocks/orange.png";
+        Block.block_images[3].src = "../games/breakout/res/blocks/orange.png";
         Block.block_images[4] = new Image();
-        Block.block_images[4].src = "../games/breakout/assets/img/blocks/yellow.png";
+        Block.block_images[4].src = "../games/breakout/res/blocks/yellow.png";
         Block.block_images[5] = new Image();
-        Block.block_images[5].src = "../games/breakout/assets/img/blocks/green.png";
+        Block.block_images[5].src = "../games/breakout/res/blocks/green.png";
         Block.block_images[6] = new Image();
-        Block.block_images[6].src = "../games/breakout/assets/img/blocks/blue.png";
+        Block.block_images[6].src = "../games/breakout/res/blocks/blue.png";
         Block.block_images[7] = new Image();
-        Block.block_images[7].src = "../games/breakout/assets/img/blocks/darkblue.png";
+        Block.block_images[7].src = "../games/breakout/res/blocks/darkblue.png";
         Block.block_images[8] = new Image();
-        Block.block_images[8].src = "../games/breakout/assets/img/blocks/purple.png";
+        Block.block_images[8].src = "../games/breakout/res/blocks/purple.png";
         Block.block_images[9] = new Image();
-        Block.block_images[9].src = "../games/breakout/assets/img/blocks/pink.png";
+        Block.block_images[9].src = "../games/breakout/res/blocks/pink.png";
         Block.powerup_images[0] = null;
         Block.powerup_images[1] = new Image();
-        Block.powerup_images[1].src = "../games/breakout/assets/img/powerups/bomb.png";
+        Block.powerup_images[1].src = "../games/breakout/res/powerups/bomb.png";
         Block.powerup_images[2] = new Image();
-        Block.powerup_images[2].src = "../games/breakout/assets/img/powerups/longer_paddle.png";
+        Block.powerup_images[2].src = "../games/breakout/res/powerups/longer_paddle.png";
         Block.powerup_images[3] = new Image();
-        Block.powerup_images[3].src = "../games/breakout/assets/img/powerups/slicing_ball.png";
+        Block.powerup_images[3].src = "../games/breakout/res/powerups/slicing_ball.png";
         Block.powerup_images[4] = new Image();
-        Block.powerup_images[4].src = "../games/breakout/assets/img/powerups/add_ball.png";
+        Block.powerup_images[4].src = "../games/breakout/res/powerups/add_ball.png";
         Block.powerup_images[5] = new Image();
-        Block.powerup_images[5].src = "../games/breakout/assets/img/powerups/add_heart.png";
+        Block.powerup_images[5].src = "../games/breakout/res/powerups/add_heart.png";
     };
     Block.prototype.destroy = function (ball) {
         if (this.color === 0)
@@ -387,7 +387,7 @@ var Paddle = (function () {
         this.biggerTimer = 0;
         this.reset();
         this.img = new Image();
-        this.img.src = "../games/breakout/assets/img/player_paddle.png";
+        this.img.src = "../games/breakout/res/player_paddle.png";
         this.usingMouseInput = true;
     }
     Paddle.prototype.reset = function () {
@@ -459,9 +459,9 @@ var Ball = (function () {
         this.previousPositionIndex = 0;
         this.reset();
         this.img = new Image();
-        this.img.src = "../games/breakout/assets/img/ball.png";
+        this.img.src = "../games/breakout/res/ball.png";
         this.img_slicing = new Image();
-        this.img_slicing.src = "../games/breakout/assets/img/ball_slicing.png";
+        this.img_slicing.src = "../games/breakout/res/ball_slicing.png";
         this.previousPositions = new Array();
     }
     Ball.prototype.reset = function () {
