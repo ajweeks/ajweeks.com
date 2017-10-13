@@ -10,11 +10,11 @@ author: AJ Weeks
 
 - Unity, C#
 
-Hexahover is game jam entry I made with two friends for the 72-hour [Ludum Dare 38](https://ldjam.com/events/ludum-dare/38/) game jam competition.
+Hexahover is game jam entry I made with two friends for the **72-hour [Ludum Dare 38](https://ldjam.com/events/ludum-dare/38/) game jam competition**.
 
 The aim of the game is to bump the other players off the playing field and be the last one standing. As time goes on, the ground tiles fall away, making it tougher and tougher to stay alive.
 
-My roles in the project inlcuded player movement, trigger audio events, as well as the basic camera movement.
+My roles in the project included **player movement**, **audio programming**, as well as the basic **camera movement**.
 
 Play the game here: [solarbear.itch.io/hexahover](https://solarbear.itch.io/hexahover)
 

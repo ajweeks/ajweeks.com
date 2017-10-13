@@ -10,9 +10,9 @@ author: AJ Weeks
 
 - C#, Unity
 
-Redshift is a fast-paced, high-action, head to head two-player racer set in a stunning low-poly landscape. It was made over the course of three months with three other team members.
+Redshift is a fast-paced, high-action, head to head two-player racer set in a stunning low-poly landscape. It was made over the course of **three months** with **three other team members.**
 
-My main roles in the project consisted of; player movement, track generation (using Bézier curves), and camera movement. Although, having only two other programmers meant we all needed to work on many systems.
+My main roles in the project consisted of; **player movement**, **track generation** (using Bézier curves), and **camera movement**. Although, having only two other programmers meant we all needed to work on many systems. Throughout the project I learned many things about working in a team, especially how to better communicate my progress and struggles clearly.
 
 You can see my blog posts made throughout the project here: [gameprojectsteam20.wordpress.com/author/ajweeks](https://gameprojectsteam20.wordpress.com/author/ajweeks/)
 

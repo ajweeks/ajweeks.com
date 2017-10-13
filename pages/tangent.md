@@ -10,13 +10,13 @@ author: AJ Weeks
 
 - C++, DirectX 11, HLSL
 
-Tangent is a single-player racing game I made in about a week. It utilizes the geometry shader to create geometry on the fly based on a Bézier curve. Parts of the shader are customizable at runtime (segment/iteration count, radius)
+Tangent is a single-player racing game I made in about **one week**. It utilizes the **geometry shader** to create geometry on the fly based on a Bézier curve. Parts of the shader are customizable at runtime. (segment/iteration count, radius) I made this project as a way to better understand the geometry shader stage, and to improve my understanding of graphics programming.
 
 #### Notable features:
- - Bézier curve-based level generation utilizing the geometry shader stage
+ - **Bézier curve-based level generation** utilizing the geometry shader stage
  - Custom post-processing effects:
-   + Bloom (Multi-pass Gaussian blur, then a high pass filter, followed by a combination pass [(fx file)](https://gist.github.com/ajweeks/dac6bbe182a5ae33b07d3e07f1bbd7a4)
-   + Grayscale (seen in pause menu) [(fx file)](https://gist.github.com/ajweeks/cb00bd2ce0b3fb2d5dc70d95d8924f03)
+   + **Bloom** - Multi-pass Gaussian blur, then a high pass filter, followed by a combination pass <i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> [shader code](https://gist.github.com/ajweeks/dac6bbe182a5ae33b07d3e07f1bbd7a4)
+   + **Grayscale** (seen in pause menu) <i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> [shader code](https://gist.github.com/ajweeks/cb00bd2ce0b3fb2d5dc70d95d8924f03)
 
 
  <div class="videoWrapper">

@@ -10,9 +10,9 @@ author: AJ Weeks
 
 - C++, Vulkan, OpenGL
 
-Flex Engine is my personal rendering engine which currently supports Vulkan and OpenGL. It was started in February 2017 as a way for me to better understand how graphics engines work.
+Flex Engine is my personal rendering engine which currently supports Vulkan and OpenGL. It was started in February 2017 as a way for me to better understand how rendering engines work.
 
-You can find the source code on GitHub at [github.com/ajweeks/FlexEngine](https://github.com/ajweeks/FlexEngine)
+You can find the entire source code on my GitHub [<i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> github.com/ajweeks/FlexEngine](https://github.com/ajweeks/FlexEngine)
 
 Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex-engine](https://ajweeks.wordpress.com/tag/flex-engine)
 
