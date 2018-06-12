@@ -16,8 +16,5 @@ This is a personal project I began to test my new knowledge of 3D application pr
  - Mouse picking input
  - Auto scramble
 
-##### Planned features:
- - Higher fidelity graphics
-
-<img src="http://i.imgur.com/c23Fdst.gif" width="45%" style="padding-left: 20%"/>
-<img src="/assets/img/rubiks-02.jpg" width="80%"/>
+<a data-fancybox="gallery" href="http://i.imgur.com/c23Fdst.gif"><img src="http://i.imgur.com/c23Fdst.gif" width="45%" style="padding-left: 20%"></a>
+<a data-fancybox="gallery" href="/assets/img/rubiks-02.jpg"><img src="/assets/img/rubiks-02.jpg" width="80%"></a>

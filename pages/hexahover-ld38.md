@@ -23,24 +23,20 @@ Other team members:
 - [Brian Vanhyfte](http://brianvanhyfte.com/)
 
 <div style="display: block; width: 100%">
-  <a href="https://i.gyazo.com/61518fd28d424b0181f3f20eb917ef4f.mp4">
-    <video style="margin: auto" width="48%" autoplay loop>
-      <source src="https://i.gyazo.com/61518fd28d424b0181f3f20eb917ef4f.mp4" type="video/mp4"/>
-    </video>
-  </a>
-  <a href="https://i.gyazo.com/8c724fde6b7115961fc843f0c8dc526f.mp4">
-    <video style="float: right" width="42%" autoplay loop>
-      <source src="https://i.gyazo.com/8c724fde6b7115961fc843f0c8dc526f.mp4" type="video/mp4"/>
-    </video>
-  </a>
+  <a data-fancybox="gallery" href="https://i.gyazo.com/61518fd28d424b0181f3f20eb917ef4f.mp4"><video preload="auto" autoplay="autoplay" style="margin: auto" src="https://i.gyazo.com/61518fd28d424b0181f3f20eb917ef4f.mp4" width="52%"></a>
+
+  <a data-fancybox="gallery" href="https://i.gyazo.com/8c724fde6b7115961fc843f0c8dc526f.mp4"><video preload="auto" autoplay="autoplay" style="margin: auto; float: right" src="https://i.gyazo.com/8c724fde6b7115961fc843f0c8dc526f.mp4" width="46%"></a>
+
 </div>
 
-<a href="/assets/img/hexahover-01.jpg"><img class="image" src="/assets/img/hexahover-01.jpg" width="100%"/></a>
-<a href="/assets/img/hexahover-02.jpg"><img class="image" src="/assets/img/hexahover-02.jpg" width="100%"/></a>
-<a href="/assets/img/hexahover-03.jpg"><img class="image" src="/assets/img/hexahover-03.jpg" width="100%"/></a>
+<a data-fancybox="gallery" href="/assets/img/hexahover-01.jpg"><img src="/assets/img/hexahover-01.jpg" width="100%"></a>
+<a data-fancybox="gallery" href="/assets/img/hexahover-02.jpg"><img src="/assets/img/hexahover-02.jpg" width="100%"></a>
+<a data-fancybox="gallery" href="/assets/img/hexahover-03.jpg"><img src="/assets/img/hexahover-03.jpg" width="100%"></a>
 
-
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/2a7e8a1306dd4537acbbb0610e97c63c/embed?autospin=0.2&amp;autostart=0&amp;transparent=0&amp;ui_related=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+<!-- Wrap video in 16:9-forced empty div -->
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+  <div class="sketchfab-embed-wrapper"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://sketchfab.com/models/2a7e8a1306dd4537acbbb0610e97c63c/embed?autospin=0.2&amp;autostart=0&amp;transparent=0&amp;ui_related=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+</div>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
     <a href="https://sketchfab.com/models/2a7e8a1306dd4537acbbb0610e97c63c?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Hover Craft</a>

@@ -21,26 +21,24 @@ Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex
  - Physically Based Rendering (PBR)
  - Image Based lighting
  - Irradiance map generation
+ - Reflection probes
+ - Post-processing stage
 
 #### Planned Features
- - Reflection probes
  - Mesh animation
  - Cascading shadow maps
- - Post-processing effects
  - ...
 
-<a href="http://i.imgur.com/qtP8Mmm.png"><img src="http://i.imgur.com/qtP8Mmm.png" style="width: 100%"/></a>
-
-<a href="http://i.imgur.com/oSIsXt7.png"><img src="http://i.imgur.com/oSIsXt7.png" style="width: 100%"/></a>
-
-<a href="http://i.imgur.com/KBCXvKs.png"><img src="http://i.imgur.com/KBCXvKs.png" style="width: 100%"/></a>
+ <a data-fancybox="gallery" href="http://i.imgur.com/qtP8Mmm.png"><img src="http://i.imgur.com/qtP8Mmm.png"  width="100%"></a>
+ <a data-fancybox="gallery" href="http://i.imgur.com/oSIsXt7.png"><img src="http://i.imgur.com/oSIsXt7.png"  width="100%"></a>
+ <a data-fancybox="gallery" href="http://i.imgur.com/KBCXvKs.png"><img src="http://i.imgur.com/KBCXvKs.png"  width="100%"></a>
 
 <div style="display: inline-block; padding-bottom: 20px">
-  <a href="http://i.imgur.com/ACLLZ5B.png"><img src="http://i.imgur.com/ACLLZ5B.png" width="49%"/></a>
-  <a href="http://i.imgur.com/e0mKpDX.png"><img src="http://i.imgur.com/e0mKpDX.png" width="49%" style="float: right"/></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/ACLLZ5B.png"><img src="http://i.imgur.com/ACLLZ5B.png"  width="49%"></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/e0mKpDX.png"><img src="http://i.imgur.com/e0mKpDX.png"  width="49%" style="float: right"></a>
 </div>
 
-<a href="http://i.imgur.com/mqszTPr.png"><img src="http://i.imgur.com/mqszTPr.png" style="width: 100%"/></a>
+<a data-fancybox="gallery" href="http://i.imgur.com/mqszTPr.png"><img src="http://i.imgur.com/mqszTPr.png"  width="100%"></a>
 
 ## Thanks
 A huge thanks to the following people/organizations for their incredibly useful resources:

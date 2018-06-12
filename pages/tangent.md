@@ -24,9 +24,9 @@ Tangent is a single-player racing game I made in about **one week**. It utilizes
 </div>
 
 <div>
-  <a href="http://i.imgur.com/VwYWDGy.png"><img class="image" src="http://i.imgur.com/VwYWDGy.png" width="100%"/></a>
-  <a href="http://i.imgur.com/2uDHB8T.jpg"><img class="image" src="http://i.imgur.com/2uDHB8T.jpg" width="49%"/></a>
-  <a href="http://i.imgur.com/OYAyGNY.png"><img class="image" src="http://i.imgur.com/OYAyGNY.png" width="49%" style="float: right"/></a>
-  <a href="http://i.imgur.com/4Ll0X0s.png"><img class="image" src="http://i.imgur.com/4Ll0X0s.png" width="49%"/></a>
-  <a href="http://i.imgur.com/MtlwHZv.png"><img class="image" src="http://i.imgur.com/MtlwHZv.png" width="49%" style="float: right"/></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/VwYWDGy.png"><img src="http://i.imgur.com/VwYWDGy.png" width="100%"></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/2uDHB8T.jpg"><img src="http://i.imgur.com/2uDHB8T.jpg" width="49%"></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/OYAyGNY.png"><img src="http://i.imgur.com/OYAyGNY.png" width="49%" style="float: right"></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/4Ll0X0s.png"><img src="http://i.imgur.com/4Ll0X0s.png" width="49%"></a>
+  <a data-fancybox="gallery" href="http://i.imgur.com/MtlwHZv.png"><img src="http://i.imgur.com/MtlwHZv.png" width="49%" style="float: right"></a>
 </div>
