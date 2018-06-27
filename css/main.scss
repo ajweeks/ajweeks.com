@@ -108,10 +108,14 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
   @media only screen and (max-width:550px) {
-    min-height: 210px;
+    min-height: 120px;
   }
   @media only screen and (min-width:$cut) {
-    min-height: 230px;
+    min-height: 190px;
+  }
+  .row.content {
+    top: 20px;
+    position: relative;
   }
 }
 
@@ -125,7 +129,7 @@ blockquote {
   color:#FFF;
   margin: 0 auto;
   .site-title {
-    font-size: 50px;
+    font-size: 4em;
     line-height: 1;
     text-shadow: 2px 2px 2px black;
     transition: 0.5s ease;
@@ -133,20 +137,20 @@ blockquote {
     white-space: nowrap;
     @media only screen and (min-width:$cut){
       margin: 0;
-      font-size: 80px;
+      font-size: 6em;
     }
     &:hover {
       color: #DDD;
     }
   }
   .site-description {
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 1;
     display: block;
     margin: 5px 0 10px 0;
     text-shadow: 1px 1px 2px black;
     @media only screen and (min-width:$cut) {
-      font-size: 40px;
+      font-size: 2.5em;
     }
   }
   .link {
@@ -352,6 +356,12 @@ blockquote {
   //     opacity: 1;
   //   }
   // }
+}
+
+.gamename {
+ @media only screen and (max-width: 660px) {
+   font-size: 1.0em !important;
+ }
 }
 
 .footer {

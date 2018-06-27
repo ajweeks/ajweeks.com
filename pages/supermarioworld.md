@@ -20,7 +20,7 @@ img
 }
 </style>
 
-## Super Mario World
+## Super Mario World Remake
 
 As a way to improve my game development skills and put my new knowledge of C++ to the test, I decided to remake one of most well known games of all time. I implemented the entire first level of the first world - sticking as close to the original as possible, and added a main menu, and level selection screen that look identical to the original's.
 

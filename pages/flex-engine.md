@@ -6,11 +6,11 @@ permalink: /flex-engine/
 author: AJ Weeks
 ---
 
-## Flex Rendering Engine
+## Flex Engine
 
 - C++, Vulkan, OpenGL
 
-Flex Engine is my personal rendering engine which currently supports Vulkan and OpenGL. It was started in February 2017 as a way for me to better understand how rendering engines work.
+Flex Engine is my personal rendering/game engine which currently supports Vulkan and OpenGL. It was started in February 2017 as a way for me to better understand how rendering engines work. Recently I've been more focused on adding support for various gameplay features like audio, player input, physics, and UI.
 
 You can find the entire source code on my GitHub [<i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> github.com/ajweeks/FlexEngine](https://github.com/ajweeks/FlexEngine)
 
@@ -22,7 +22,11 @@ Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex
  - Image Based lighting
  - Irradiance map generation
  - Reflection probes
- - Post-processing stage
+ - Post-processing stage (contrast/brightness control, anti-aliasing, )
+ - Audio playback
+ - Physics simulation
+ - Player input handling (keyboard/mouse/gamepad)
+ - Custom level save file parsing/serializing (with support for prefabs)
 
 #### Planned Features
  - Mesh animation

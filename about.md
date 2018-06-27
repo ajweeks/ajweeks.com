@@ -14,7 +14,7 @@ You can also connect with me on LinkedIn: [<i class="icon fa fa-linkedin-square"
 
 Or, if you're old-fashioned feel free to send me an email: [contact@ajweeks.com](mailto:contact@ajweeks.com)
 
-<a href="../assets/img/portrait_1.jpg"><img src="../assets/img/portrait_1.jpg" style="width: 30%; margin-left: auto; margin-right: auto"/></a>
+<img src="../assets/img/portrait_1.jpg" style="width: 30%; margin-left: auto; margin-right: auto; display: block"/>
 
 <!-- If you enjoy any of my (free) games and are feeling generous, I would greatly appreciate any donations.
 
