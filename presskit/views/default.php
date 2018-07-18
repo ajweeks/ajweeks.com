@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -41,7 +42,7 @@
 					echo '<li>', $error, '</li>';
 				}
 				echo '</ul>';
-			} 
+			}
 
 			if (sizeof(ErrorHelper::$warnings)) {
 				echo '<ul class="warnings sixteen columns">';
@@ -49,7 +50,7 @@
 					echo '<li>', $warnings, '</li>';
 				}
 				echo '</ul>';
-			} 
+			}
 		?>
 		<header>
 			<h1 class="sixteen columns"><?php echo ViewHelper::$header; ?></h1>
@@ -74,7 +75,7 @@
 	</div><!-- container -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="/<?php echo BASE_PATH; ?>js/presskit.js" type="text/javascript"></script>	
+	<script src="/<?php echo BASE_PATH; ?>js/presskit.js" type="text/javascript"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
