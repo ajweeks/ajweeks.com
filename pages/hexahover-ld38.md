@@ -7,14 +7,15 @@ author: AJ Weeks
 ---
 
 ## HexaHover
+###### 2017
 
 - Unity, C#
 
-Hexahover is game jam entry I made with two friends for the **72-hour [Ludum Dare 38](https://ldjam.com/events/ludum-dare/38/) game jam competition**.
+Hexahover is 2-6 player bumper-car game I made with two friends as an entry for the **72-hour [Ludum Dare 38](https://ldjam.com/events/ludum-dare/38/) game jam competition**.
 
-The aim of the game is to bump the other players off the playing field and be the last one standing. As time goes on, the ground tiles fall away, making it tougher and tougher to stay alive.
+The aim of the game is to bump the other players off the constantly changing playing field in order to be the last one standing.
 
-My roles in the project included **player movement**, **audio programming**, as well as the basic **camera movement**.
+My main roles for the project included **player movement**, **audio programming**, as well as the basic **camera movement**.
 
 Play the game here: [solarbear.itch.io/hexahover](https://solarbear.itch.io/hexahover)
 
@@ -31,7 +32,6 @@ Other team members:
 
 <a data-fancybox="gallery" href="/assets/img/hexahover-01.jpg"><img src="/assets/img/hexahover-01.jpg" width="100%"></a>
 <a data-fancybox="gallery" href="/assets/img/hexahover-02.jpg"><img src="/assets/img/hexahover-02.jpg" width="100%"></a>
-<a data-fancybox="gallery" href="/assets/img/hexahover-03.jpg"><img src="/assets/img/hexahover-03.jpg" width="100%"></a>
 
 <!-- Wrap video in 16:9-forced empty div -->
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">

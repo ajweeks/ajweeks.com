@@ -6,6 +6,7 @@ permalink: /games/pong/
 ---
 
 ## Pong
+###### 2014
 
 This is a clone of one of the first video games ever made: <a href="https://en.wikipedia.org/wiki/Pong">Pong</a>.
 

@@ -7,7 +7,7 @@ author: AJ Weeks
 ---
 
 ## Internship at Electric Square
-###### *February - June 2018*
+###### February - June 2018
 
 - C++, Unreal Engine 4
 

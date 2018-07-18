@@ -7,6 +7,7 @@ author: AJ Weeks
 ---
 
 ## Flex Engine
+###### 2017-Present
 
 - C++, Vulkan, OpenGL
 

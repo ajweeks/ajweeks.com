@@ -6,21 +6,20 @@ permalink: /apex-engine/
 author: AJ Weeks
 ---
 
-## Apex Engine
+## Crowchild (Apex Engine)
+###### 2016
 
 - C++, SFML, Box2D
 
 > This project was discontinued in late 2016.
 
-Apex Engine is my first personal 2D game engine, written using C++. It supports some basic game functionality and utilizes Box2D for physics and SFML for window creation and input management.
-
-I began adding features that could be used in an RPG-like game, and decided to call the game Crowchild. It never became more than the simple prototype you can see here.
+Crowchild is the code name for a game I began making using my custom-built "Apex Engine". It is my first 2D game engine written using C++. It supports some basic game functionality and utilizes Box2D for physics and SFML for window creation and input management. School got in the way of me continuing this project further, and then I began working on a new 3D engine once I had some free time again.
 
 ### Notable features
- - Custom debug overlay / UI (color editor, drop downs, buttons, sliders)
- - Dynamic text box (using 9-slice sprite rendering)
-- Character dialogue system
- - Real-time light editor (position, radius, falloff)
+ - Debug user-interface overlay (color editor, drop downs, buttons, sliders)
+ - Dynamically-sized 9-slice sprite rendering
+ - Barebones character dialogue system
+ - Real-time light editor (position, radius, colour, falloff)
  - Custom keybindings (editable via pause menu)
 
  <a data-fancybox="gallery" href="/assets/img/apex-engine-logo.jpg"><img src="/assets/img/apex-engine-logo.jpg"  width="35.5%"></a>
@@ -35,4 +34,4 @@ I began adding features that could be used in an RPG-like game, and decided to c
 <a data-fancybox="gallery" href="/assets/img/apex-engine-01.jpg"><img src="/assets/img/apex-engine-01.jpg" width="100%"></a>
 <a data-fancybox="gallery" href="/assets/img/apex-engine-02.jpg"><img src="/assets/img/apex-engine-02.jpg" width="100%"></a>
 
-You can find project's source on my GitHub here: [github.com/ajweeks/ApexEngine/](https://github.com/ajweeks/ApexEngine/) <br /><span style="font-size: 12px">(But I don't recommend using it as a guide since it was my first personal engine)</span>
+You can find project's source on my GitHub here: [github.com/ajweeks/ApexEngine](https://github.com/ajweeks/ApexEngine/) <br /><span style="font-size: 12px">(But I don't recommend using it as a guide since it was my first personal engine)</span>
