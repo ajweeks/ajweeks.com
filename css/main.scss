@@ -89,6 +89,34 @@ blockquote {
   }
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  pointer-events: none;
+    transition: 0.15s ease-in-out;
+    opacity: 0;
+    background-color: #00000078;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 0.3em;
+
+    position: absolute;
+    z-index: 1;
+    width: 130px;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -65px; /* Half of the width */
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
 .caption {
   text-align: center;
   display: block;
