@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Flex Engine
-tags: 3D, vulkan, opengl, graphics, engine, cpp
+tags: 3D, vulkan, opengl, graphics, engine, cpp, c++
 permalink: /flex-engine/
 author: AJ Weeks
 ---
@@ -31,19 +31,19 @@ Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex
 - Audio playback
 
 <a data-fancybox="gallery" href="http://i.imgur.com/3XQGcDD.png"><img src="http://i.imgur.com/3XQGcDD.png"  width="100%"></a>
-**A view of the editor tools showing info about scenes, objects, materials, lights, and user-settings**
+<span class="caption">A view of the editor tools showing info about scenes, objects, materials, lights, and user-settings</span>
 
 <a data-fancybox="gallery" href="http://i.imgur.com/DYpYMhH.jpg"><img src="http://i.imgur.com/DYpYMhH.jpg"  width="100%"></a>
-**Profiler overlay showing a breakdown the CPU-time of a single frame**
+<span class="caption">Profiler overlay showing a breakdown the CPU-time of a single frame</span>
 
 <a data-fancybox="gallery" href="http://i.imgur.com/LbRIVav.jpg"><img src="http://i.imgur.com/LbRIVav.jpg"  width="100%"></a>
-**GBuffer (top-left to bottom-right):** position, albedo, normal, final image, depth, metallic, AO, roughness
+<span class="caption">GBuffer (top-left to bottom-right): position, albedo, normal, final image, depth, metallic, AO, roughness</span>
 
 
  <a data-fancybox="gallery" href="http://i.imgur.com/qtP8Mmm.png"><img src="http://i.imgur.com/qtP8Mmm.png"  width="100%"></a>
  <a data-fancybox="gallery" href="http://i.imgur.com/oSIsXt7.png"><img src="http://i.imgur.com/oSIsXt7.png"  width="100%"></a>
  <a data-fancybox="gallery" href="http://i.imgur.com/KBCXvKs.png"><img src="http://i.imgur.com/KBCXvKs.png"  width="100%"></a>
-**The effect different environment maps have on the same model when using image-based lighting**
+<span class="caption">The effect different environment maps have on the same model when using image-based lighting</span>
 
 <a data-fancybox="gallery" href="http://i.imgur.com/mqszTPr.png"><img src="http://i.imgur.com/mqszTPr.png"  width="100%"></a>
 

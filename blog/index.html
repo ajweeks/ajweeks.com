@@ -1,32 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
-<html>
-<body>
-    <script type="text/javascript">
-        window.location = "http://ajweeks.wordpress.com";
-    </script>
-</body>
-</html>
-
-<!--
 ---
 layout: page
 title: Blog
 ---
 
-<h1 class="page-heading">Posts</h1>
-
 <ul class="post-list">
   {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2>
+    <li class="post-li">
+      <h2 class="post-link-holder">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
+
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
   {% endfor %}
 </ul>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

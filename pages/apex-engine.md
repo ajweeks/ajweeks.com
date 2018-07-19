@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  ApexEngine
-tags: ludum dare, game jam, unity
+tags: game engine, rendering engine, apex engine, 2D, c++, cpp
 permalink: /apex-engine/
 author: AJ Weeks
 ---

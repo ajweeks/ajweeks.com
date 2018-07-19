@@ -66,6 +66,7 @@ body {
 
 h2 + h6 {
   margin-top: -1.5em;
+  color: #8a8a8a;
 }
 
 p + ul {
@@ -86,6 +87,13 @@ blockquote {
   p {
     margin-bottom: 0;
   }
+}
+
+.caption {
+  text-align: center;
+  display: block;
+  color: #8a8a8a;
+  font-weight: bold;
 }
 
 .videoWrapper
@@ -133,6 +141,36 @@ blockquote {
   fill: red;
 }
 
+.post {
+  @media only screen and (min-width: 720px) {
+    width: 60%;
+    margin: 0 auto;
+    min-width: 480px;
+  }
+}
+
+.post-link-holder {
+  margin: 0;
+  line-height: 0;
+}
+
+.post-link {
+  font-size: 0.45em;
+  line-height: initial;
+}
+
+.post-li {
+  list-style-type: none;
+  display: grid;
+}
+
+.post-meta {
+  float: right;
+  margin-bottom: 1em;
+  color: #929292;
+  width: 100%;
+}
+
 .content {
   z-index: 1;
   text-align: center;
@@ -153,6 +191,7 @@ blockquote {
       color: #DDD;
     }
   }
+
   .site-description {
     font-size: 1.5em;
     line-height: 1;
@@ -163,6 +202,7 @@ blockquote {
       font-size: 2.5em;
     }
   }
+
   .link {
     color: #FFF;
     display: inline-flex;
@@ -187,6 +227,10 @@ blockquote {
       }
     }
   }
+}
+
+.container {
+  min-height: 512px;
 }
 
 .icons-header {
