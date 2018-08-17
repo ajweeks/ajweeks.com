@@ -7,7 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 author: AJ Weeks
 ---
 
-You heard it right, game number two is complete! If you have no clue what I’m talking about, you might want to read the {% if page.previous %}<a href="{{ page.previous.url }}">previous post</a>{% endif %} first. While there are a lot of features which I had to unfortunately leave out, I’m pretty pleased with the final product. Mirrors is a tile-based puzzle game, you can see read more about it and download a copy to try out yourself [here](/mirrors-desc).
+You heard it right, game number two is complete! If you have no clue what I’m talking about, you might want to read the {% if page.previous %}<a class="underline" href="{{ page.previous.url }}">previous post</a>{% endif %} first. While there are a lot of features which I had to unfortunately leave out, I’m pretty pleased with the final product. Mirrors is a tile-based puzzle game, you can see read more about it and download a copy to try out yourself <a class="underline" href="/mirrors-desc">here</a>.
 
 I have to say I learned a lot of things that will certainly make my next game a lot better, and make the development of it much more streamlined. Here are a few notable things I discovered:
 

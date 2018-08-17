@@ -33,10 +33,10 @@ New Atlas is a real-time strategy game I made with **five other team members** o
 <p style="text-align:center; color:#999; position:relative; top: -20px">Two possible HUD states, dependent on the current selection</p>
 
 **Other team members:**
- - [Yosha Vandaele](http://yoshavandaele.com/)
- - [Sooi Cherchye](http://sooi.cherchye.com/)
- - [Brian Van Hyfte](http://brianvanhyfte.com/)
- - [Michelle Nassens](https://michellenaessens.artstation.com/)
- - [Aidan Vangrysperre](http://aidanv.com/)
+ - <a class="underline" href="http://yoshavandaele.com/">Yosha Vandaele</a>
+ - <a class="underline" href="http://sooi.cherchye.com/">Sooi Cherchye</a>
+ - <a class="underline" href="http://brianvanhyfte.com/">Brian Van Hyfte</a>
+ - <a class="underline" href="https://michellenaessens.artstation.com/">Michelle Nassens</a>
+ - <a class="underline" href="http://aidanv.com/">Aidan Vangrysperre</a>
 
-You can get a better look at the development process by reading the blog posts we made along the way <a href="https://baggedmilkstudios.wordpress.com/">here</a>!
+You can get a better look at the development process by reading the blog posts we made along the way <a class="underline" href="https://baggedmilkstudios.wordpress.com/">here</a>!

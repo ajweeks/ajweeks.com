@@ -7,7 +7,7 @@ title: Blog
   {% for post in site.posts %}
     <li class="post-li">
       <h2 class="post-link-holder">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link underline" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
 
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -15,4 +15,4 @@ title: Blog
   {% endfor %}
 </ul>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">subscribe <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

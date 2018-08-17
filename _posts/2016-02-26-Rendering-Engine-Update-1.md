@@ -21,13 +21,13 @@ Another big goal of the project is to learn how to design components in an API-a
 
 Since my objective with this project is to learn about graphics APIs, and not the internal structure of a png image (not that that doesn’t interest me!), I’m going to be using various libraries. So far I’ve used:
 
-- [GLFW](http://www.glfw.org/) (for linking to OpenGL)
-- [GLM](http://glm.g-truc.net) (for matrix & vector math functions)
-- [GLAD](https://github.com/Dav1dde/glad) (for loading library extensions)
-- [SOIL](http://www.lonesock.net/soil.html) (for loading images)
+- <a class="underline" href="http://www.glfw.org/">GLFW</a> (for linking to OpenGL)
+- <a class="underline" href="http://glm.g-truc.net">GLM</a> (for matrix & vector math functions)
+- <a class="underline" href="https://github.com/Dav1dde/glad">GLAD</a> (for loading library extensions)
+- <a class="underline" href="http://www.lonesock.net/soil.html">SOIL</a> (for loading images)
 
-I initially tried to get the project building using [cmake](https://cmake.org), with the hopes of reducing the headache of trying to setup the project on another workstation (i.e. my teacher’s). After spending several hours without having any luck, I decided to simply use Visual Studio, as that was what I was used to, and I know that all my teachers all definitely know how to use it. I would like to try again in the future to get everything building using cmake.
+I initially tried to get the project building using <a class="underline" href="https://cmake.org">cmake</a>, with the hopes of reducing the headache of trying to setup the project on another workstation (i.e. my teacher’s). After spending several hours without having any luck, I decided to simply use Visual Studio, as that was what I was used to, and I know that all my teachers all definitely know how to use it. I would like to try again in the future to get everything building using cmake.
 
-I would also like to take a look at integrating [Travis-CI](https://travis-ci.org/) for running tests automatically, mostly just so that I know how to do it more than anything else. I don’t think I’ll get much use out of it on this project,  but I think it would be good to experience all that needs to be done to get a project building using it.
+I would also like to take a look at integrating <a class="underline" href="https://travis-ci.org/">Travis-CI</a> for running tests automatically, mostly just so that I know how to do it more than anything else. I don’t think I’ll get much use out of it on this project,  but I think it would be good to experience all that needs to be done to get a project building using it.
 
 The next item on the to-do list is integrating Direct3D, stay tuned for updates on that!

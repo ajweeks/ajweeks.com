@@ -34,4 +34,4 @@ Crowchild is the code name for a game I began making using my custom-built "Apex
 <a data-fancybox="gallery" href="/assets/img/apex-engine-01.jpg"><img src="/assets/img/apex-engine-01.jpg" width="100%"></a>
 <a data-fancybox="gallery" href="/assets/img/apex-engine-02.jpg"><img src="/assets/img/apex-engine-02.jpg" width="100%"></a>
 
-You can find project's source on my GitHub here: [github.com/ajweeks/ApexEngine](https://github.com/ajweeks/ApexEngine/) <br /><span style="font-size: 12px">(But I don't recommend using it as a guide since it was my first personal engine)</span>
+You can find project's source on my GitHub here: <a class="underline" href="https://github.com/ajweeks/ApexEngine">github.com/ajweeks/ApexEngine</a><br /><span style="font-size: 12px">(But I don't recommend using it as a guide since it was my first personal engine)</span>

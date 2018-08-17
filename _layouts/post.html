@@ -13,8 +13,8 @@ layout: default
   </div>
 
 <div class="post-nav">
-    {% if page.previous %}<a href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
-    {% if page.next %}<a href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
+    {% if page.previous %}<a class="underline" href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
+    {% if page.next %}<a class="underline" href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
 </div>
 
 {% include disqus.html %}

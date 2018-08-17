@@ -13,9 +13,9 @@ author: AJ Weeks
 
 Flex Engine is my personal game engine which I began work on in February 2017 as a playground for learning about real-time technology. During the first year of development I focused on the renderer, after which I began adding support for the plethora of other necessary systems that a game engine requires (such as audio, player input, physics, and UI.)
 
-The source for Flex is publicly available here: [<i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> github.com/ajweeks/FlexEngine](https://github.com/ajweeks/FlexEngine)
+Find the source for Flex at: <a class="underline" href="https://github.com/ajweeks/FlexEngine"><i class="icon fa fa-github" aria-hidden="true" style="color: #222"></i> github.com/ajweeks/FlexEngine</a>
 
-Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex-engine](https://ajweeks.wordpress.com/tag/flex-engine)
+Follow my progress on this project on my blog at <a class="underline" href="http://ajweeks.com/blog">ajweeks.com/blog</a>
 
 #### Notable Features
 - Support for both Vulkan and OpenGL, switchable at runtime
@@ -49,10 +49,10 @@ Follow my progress on this project on my blog at [ajweeks.wordpress.com/tag/flex
 
 ## Acknowledgments
 I must extend a huge thank you to the following people and organizations for their incredibly useful resources:
- - Alexander Overvoorde of [vulkan-tutorial.com](https://vulkan-tutorial.com/)
- - Sascha Willems of [github.com/SaschaWillems/Vulkan](https://github.com/SaschaWillems/Vulkan)
- - Baldur Karlsson of [github.com/baldurk/renderdoc](https://github.com/baldurk/renderdoc)
- - Joey de Vries of [learnopengl.com](https://learnopengl.com/)
- - Andrew Maximov for the pistol model and textures [artisaverb.info/PBT.html](http://artisaverb.info/PBT.html)
- - [FreePBR.com](http://FreePBR.com) for their PBR textures
- - [hdrihaven.com](https://hdrihaven.com/) & [hdrlabs.com](http://www.hdrlabs.com/sibl/archive.html) for their HDRI maps
+ - Alexander Overvoorde of <a class="underline" href="https://vulkan-tutorial.com/">vulkan-tutorial.com</a>
+ - Sascha Willems of <a class="underline" href="https://github.com/SaschaWillems/Vulkan">github.com/SaschaWillems/Vulkan</a>
+ - Baldur Karlsson of <a class="underline" href="https://renderdoc.org/">github.com/baldurk/renderdoc</a>
+ - Joey de Vries of <a class="underline" href="https://learnopengl.com/">learnopengl.com
+ - Andrew Maximov for the pistol model and textures <a class="underline" href="http://artisaverb.info/PBT.html">artisaverb.info/PBT.html</a>
+ - <a class="underline" href="http://FreePBR.com">FreePBR.com</a> for their PBR textures
+ - <a class="underline" href="https://hdrihaven.com/">hdrihaven.com</a> & <a class="underline" href="http://www.hdrlabs.com/sibl/archive.html">hdrlabs.com</a> for their HDRI maps
