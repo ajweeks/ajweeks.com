@@ -1,1 +1,1 @@
-call jekyll serve -w
+call jekyll serve -w --incremental
