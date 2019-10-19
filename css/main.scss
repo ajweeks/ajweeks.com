@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url(monokai.css);
+
 $main: #1a222c;
 $sec: #4B5664;
 $purple: #54516A;
@@ -111,7 +113,7 @@ blockquote {
   pointer-events: none;
     transition: 0.15s ease-in-out;
     opacity: 0;
-    background-color: #00000078;
+    background-color: #000000b3;
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -124,6 +126,12 @@ blockquote {
     bottom: 80%;
     left: 50%;
     margin-left: -65px; /* Half of the width */
+}
+
+.tooltiptext.large {
+  font-size: 1.1em;
+  width: 70px;
+  margin-left: -35px; /* Half of the width */
 }
 
 .tooltip:hover .tooltiptext {
@@ -155,22 +163,17 @@ blockquote {
 }
 
 #page-header {
-  background: {
-    image: url("http://i.imgur.com/FSUw6B4.jpg");
-  }
+  background-color: #375979;
   box-shadow: inset 0 -48px 13px -40px #00000087;
   display: block;
   vertical-align: bottom;
   width: 100%;
-  min-height: 125px;
+  min-height: 145px;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media only screen and (max-width:550px) {
-    min-height: 120px;
-  }
   @media only screen and (min-width:$cut) {
-    min-height: 190px;
+    min-height: 195px;
   }
   .row.content {
     top: 20px;
@@ -288,7 +291,7 @@ blockquote {
     margin: 2px;
     border-radius: 50%;
     border: 2px solid #FFF;
-    transition: all .7s;
+    transition: all .3s;
     &:hover {
       color: $main;
       background: #FFF;
@@ -367,7 +370,7 @@ blockquote {
   }
   li {
     color: $main;
-    font-size: 1.1rem;
+    font-size: 0.9em;
   }
   p {
     margin-right: 5px;
@@ -517,10 +520,10 @@ blockquote {
     }
 
     a {
-      display: block;
+      display: table;
       text-decoration: none;
       color: #CCC;
-      padding-bottom: 1em;
+      margin-bottom: 1em;
 
       &::before {
         content: "";
@@ -544,4 +547,28 @@ blockquote {
       }
     }
   }
+}
+
+code {
+  background: #272822;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.highlighter-rouge {
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.highlight {
+    border-radius: 8px;
+    display: inline-block;
+    min-width: -webkit-fill-available;
+    min-width: -moz-available;
+    min-width: fill-available;
+}
+
+.inline {
+  background: #e8e8e8;
 }

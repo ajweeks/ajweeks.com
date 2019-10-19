@@ -12,11 +12,14 @@ layout: default
     {{ content }}
   </div>
 
-<div class="post-nav">
-    {% if page.previous %}<a class="underline" href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
-    {% if page.next %}<a class="underline" href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
-</div>
-
-{% include disqus.html %}
+  <div class="post-nav">
+      {% if page.previous %}<a class="underline" href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a class="underline" href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
+  </div>
 
 </article>
+
+<p style="text-align: right; padding-top: 60px" class="rss-subscribe">
+  <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
+  <a aria-label="" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon fa fa-rss-square" aria-hidden="true"></i></a>
+</p>

@@ -2,7 +2,7 @@
 title: AJ Weeks
 description: AJ Weeks - Game Developer
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: "http://ajweeks.com"
+url: "https://ajweeks.com"
 
 # User settings
 username: AJ Weeks
@@ -19,5 +19,7 @@ sass:
 # Google-analytics
 google-analytics:
   id: "UA-57413391-2"
+
+highlighter: rouge
 
 exclude: ['package.json', 'src' , 'node_modules']

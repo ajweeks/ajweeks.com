@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MIrrors
+title: Mirrors
 navlink: false
 permalink: /mirrors-desc/
 ---

@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About
 
-I'm AJ Weeks, a 21 year old game development student at <a class="underline" href="http://digitalartsandentertainment.be/">Digital Arts and Entertainment</a>
+I'm AJ Weeks, a 22 year old game development student at <a class="underline" href="http://digitalartsandentertainment.be/">Digital Arts and Entertainment</a>
 
 I can best be reached on Twitter: <a class="underline" href="http://twitter.com/liqwidice"><i class="icon fa fa-twitter" aria-hidden="true" style="color: #222"></i> @liqwidice</a>
 

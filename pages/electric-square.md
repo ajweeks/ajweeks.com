@@ -6,13 +6,11 @@ permalink: /electric-square/
 author: AJ Weeks
 ---
 
-## Internship at Electric Square
-###### February - June 2018
+## Electric Square
+###### February 2018 - Present
 
-- C++, Unreal Engine 4
+- C++
 
-During my four month internship at <a class="underline" href="https://www.electricsquare.com">Electric Square</a> I worked as a game programmer on an undisclosed project. My responsibilities included fixing bugs, working on low-level systems, and improving various systems. **This page will be updated once more info about the game is made public.**
+I'm currently employeed at Electric Square as a game programmer. My main responsibilities include rendering system improvements, engine optimization, and game stability improvements. For more about the project I'm working on visit <a class="underline" href="https://www.electricsquare.com">electricsquare.com</a>. 
 
-Apart from all of the technical lessons I learned during my internship I also learned many useful team skills which noticeably improved my productivity as the internship went on. After completing my internship I was offered a full-time role, which I accepted.
-
-<a data-fancybox="gallery" href="/assets/img/es-logo.jpg"><img src="/assets/img/es-logo.jpg" width="50%" style="display: block; margin: auto"></a>
+<a data-fancybox="gallery" href="/assets/img/es-logo.jpg"><img src="/assets/img/es-logo.jpg" width="42%" style="display: block; margin: auto"></a>

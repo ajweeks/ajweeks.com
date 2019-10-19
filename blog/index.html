@@ -1,7 +1,12 @@
 ---
-layout: page
+layout: default
 title: Blog
 ---
+
+<p style="text-align: right" class="rss-subscribe">
+  <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
+  <a aria-label="" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon fa fa-rss-square" aria-hidden="true"></i></a>
+</p>
 
 <ul class="post-list">
   {% for post in site.posts %}
@@ -15,4 +20,7 @@ title: Blog
   {% endfor %}
 </ul>
 
-<p class="rss-subscribe">subscribe <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">
+  <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
+  <a aria-label="" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon fa fa-rss-square" aria-hidden="true"></i></a>
+</p>
