@@ -30,22 +30,21 @@ Follow my progress on this project on my blog at <a class="underline" href="http
 - Physics simulation
 - Audio playback
 
-<a data-fancybox="gallery" href="https://i.imgur.com/3XQGcDD.png"><img src="https://i.imgur.com/3XQGcDD.png"  width="100%"></a>
-<span class="caption">A view of the editor tools showing info about scenes, objects, materials, lights, and user-settings (click to enlarge)</span>
+<a data-fancybox="gallery" href="/assets/img/flex-engine-editor.png"><img src="/assets/img/flex-engine-editor.png"  width="100%"></a>
+<span class="caption">A view of the editor tools showing info about scenes, objects, materials, lights, and user-settings</span>
 
-<a data-fancybox="gallery" href="https://i.imgur.com/DYpYMhH.jpg"><img src="https://i.imgur.com/DYpYMhH.jpg"  width="100%"></a>
+<a data-fancybox="gallery" href="/assets/img/flex-engine-profiler.jpg"><img src="/assets/img/flex-engine-profiler.jpg"  width="100%"></a>
 <span class="caption">Profiler overlay showing a breakdown the CPU-time of a single frame</span>
 
-<a data-fancybox="gallery" href="https://i.imgur.com/LbRIVav.jpg"><img src="https://i.imgur.com/LbRIVav.jpg"  width="100%"></a>
+<a data-fancybox="gallery" href="/assets/img/flex-engine-gbuf.jpg"><img src="/assets/img/flex-engine-gbuf.jpg"  width="100%"></a>
 <span class="caption">GBuffer (top-left to bottom-right): position, albedo, normal, final image, depth, metallic, AO, roughness</span>
 
-
- <a data-fancybox="gallery" href="https://i.imgur.com/qtP8Mmm.png"><img src="https://i.imgur.com/qtP8Mmm.png"  width="100%"></a>
- <a data-fancybox="gallery" href="https://i.imgur.com/oSIsXt7.png"><img src="https://i.imgur.com/oSIsXt7.png"  width="100%"></a>
- <a data-fancybox="gallery" href="https://i.imgur.com/KBCXvKs.png"><img src="https://i.imgur.com/KBCXvKs.png"  width="100%"></a>
+ <a data-fancybox="gallery" href="/assets/img/flex-engine-guns-01.jpg"><img src="/assets/img/flex-engine-guns-01.jpg"  width="100%"></a>
+ <a data-fancybox="gallery" href="/assets/img/flex-engine-guns-02.jpg"><img src="/assets/img/flex-engine-guns-02.jpg"  width="100%"></a>
+ <a data-fancybox="gallery" href="/assets/img/flex-engine-guns-03.jpg"><img src="/assets/img/flex-engine-guns-03.jpg"  width="100%"></a>
 <span class="caption">The effect different environment maps have on the same model when using image-based lighting</span>
 
-<a data-fancybox="gallery" href="https://i.imgur.com/mqszTPr.png"><img src="https://i.imgur.com/mqszTPr.png"  width="100%"></a>
+<a data-fancybox="gallery" href="/assets/img/flex-engine-rotate.gif"><img src="/assets/img/flex-engine-rotate.gif"  width="100%"></a>
 
 ## Acknowledgments
 I must extend a huge thank you to the following individuals and organizations for their incredibly useful resources:

@@ -25,7 +25,7 @@ Crowchild is the code name for a game I began making using my custom-built "Apex
  <a data-fancybox="gallery" href="/assets/img/apex-engine-logo.jpg"><img src="/assets/img/apex-engine-logo.jpg"  width="35.5%"></a>
  <a data-fancybox="gallery" href="/assets/img/apex-engine-speaking.gif"><img src="/assets/img/apex-engine-speaking.gif" width="63.5%"></a>
 
- <a data-fancybox="gallery" href="https://i.imgur.com/YzOGgAv.mp4"><video preload="auto" autoplay="autoplay" src="https://i.imgur.com/YzOGgAv.mp4" width="100%"></a>
+ <a data-fancybox="gallery" href="/assets/img/crowchild-lighting.mp4"><video preload="auto" autoplay="autoplay" src="/assets/img/crowchild-lighting.mp4" width="100%"></a>
 
 <!-- <video preload="auto" autoplay="autoplay" loop="loop" width="100%">
 <source src="image" src="https://i.imgur.com/YzOGgAv.mp4" type="video/mp4"/>

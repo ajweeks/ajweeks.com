@@ -19,5 +19,5 @@ This is a personal project I began to test my new knowledge of 3D application pr
  - Smooth rotation animation
  - Input queuing
 
-<a data-fancybox="gallery" href="https://i.imgur.com/c23Fdst.gif"><img src="https://i.imgur.com/c23Fdst.gif" width="45%" style="padding-left: 20%"></a>
+<a data-fancybox="gallery" href="/assets/img/rubiks-13.gif"><img src="/assets/img/rubiks-13.gif" width="45%" style="padding-left: 20%"></a>
 <a data-fancybox="gallery" href="/assets/img/rubiks-02.jpg"><img src="/assets/img/rubiks-02.jpg" width="80%"></a>
