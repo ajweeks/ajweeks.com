@@ -13,13 +13,14 @@ layout: default
   </div>
 
   <div class="post-nav">
-      {% if page.previous %}<a class="underline" href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% endif %}
-      {% if page.next %}<a class="underline" href="{{ page.next.url }}" style="float:right">{{ page.next.title }} &gt;</a>{% endif %}
+      <div style="float:left; width:40%; text-align:left">{% if page.previous %}<a class="underline" href="{{ page.previous.url }}">&lt; {{ page.previous.title }}</a>{% else %}<p></p>{% endif %}</div>
+      <div style="width:20%; text-align:center; display:inline-block"><a class="underline" href="/blog" style="width:33.33%">Index</a></div>
+      <div style="float:right; width:40%; text-align:right">{% if page.next %}<a class="underline" href="{{ page.next.url }}" style="float:right width:33.33%">{{ page.next.title }} &gt;</a>{% else %}<p></p>{% endif %}</div>
   </div>
 
 </article>
 
-<p style="text-align: right; padding-top: 60px" class="rss-subscribe">
+<p style="text-align: right; padding-top: 30px" class="rss-subscribe">
   <a class="underline" href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
   <a aria-label="" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon fa fa-rss-square" aria-hidden="true"></i></a>
 </p>
